@@ -1,12 +1,13 @@
 <h1 align="center">  API - All Tech </h1>
 <h3 align="center"> Desenvolvimento de Aplicação Web Simples, FrontEnd Básico, com Persistência em BD Relacional </h3>
 
-<p align="center">
+<p align="center" id="menu">
     <a href="#sobre">Sobre</a> | 
     <a href="#backlog">Backlogs</a> | 
     <a href="#userstory">Backlogs</a> | 
     <a href="#pastas">Configuração das pastas</a> | 
-    <a href="#equipe">Equipe</a>
+    <a href="#equipe">Equipe</a> | 
+    <a href="#manual">Manual de usuário</a>
 </p>
 
 <span id="sobre">
@@ -17,7 +18,7 @@
   
 > :gear: **Tecnologias Utilizadas:** [ReactJs](https://pt-br.reactjs.org/), [JavaScript](https://developer.mozilla.org/pt-BR/docs/Web/JavaScript), [TypeScript](https://www.typescriptlang.org/), [Figma](http://www.figma.com), [Visual Studio Code](https://code.visualstudio.com/), [Discord](https://discord.com/), [GitHub](https://github.com/)
 
-<a href="##--api---all-tech-">--> voltar ao menu</a>
+<a href="#menu">--> voltar ao menu</a>
    
  <span id="backlog">  
    
@@ -60,7 +61,7 @@
 
 </div>
 
-<a href="##--api---all-tech-">--> voltar ao menu</a>
+<a href="#menu">--> voltar ao menu</a>
 
 <br>
 
@@ -74,7 +75,7 @@
  
  </div>
  
- <a href="##--api---all-tech-">--> voltar ao menu</a>
+<a href="#menu">--> voltar ao menu</a>
 
 <span id="pastas">
    
@@ -84,6 +85,12 @@
      
 <br>
 
+<a href="#menu">--> voltar ao menu</a>
+    
+<span id="manual">
+    
+<a href="#menu">--> voltar ao menu</a>
+    
 <span id="equipe"> 
     
 ## :busts_in_silhouette: Equipe
@@ -98,4 +105,4 @@
  |   Dev Team    | Júlia Sousa Gayotto                   |  [![Linkedin Badge](https://img.shields.io/badge/Linkedin-blue?style=flat-square&logo=Linkedin&logoColor=white)](https://www.linkedin.com/in/júlia-gayotto/) [![GitHub Badge](https://img.shields.io/badge/GitHub-111217?style=flat-square&logo=github&logoColor=white)](https://github.com/JuliaGayotto)              |
  |   Dev Team    | Lucas França Registro                 |  [![Linkedin Badge](https://img.shields.io/badge/Linkedin-blue?style=flat-square&logo=Linkedin&logoColor=white)](https://www.linkedin.com/in/NOME/) [![GitHub Badge](https://img.shields.io/badge/GitHub-111217?style=flat-square&logo=github&logoColor=white)](https://github.com/LucasFrancaRegistro)              |
 
-<a href="##--api---all-tech-">--> voltar ao menu</a>
+<a href="#menu">--> voltar ao menu</a>
