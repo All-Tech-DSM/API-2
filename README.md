@@ -16,6 +16,8 @@
     
   
 > :gear: **Tecnologias Utilizadas:** [ReactJs](https://pt-br.reactjs.org/), [JavaScript](https://developer.mozilla.org/pt-BR/docs/Web/JavaScript), [TypeScript](https://www.typescriptlang.org/), [Figma](http://www.figma.com), [Visual Studio Code](https://code.visualstudio.com/), [Discord](https://discord.com/), [GitHub](https://github.com/)
+
+<a href="##--api---all-tech-">--> voltar ao menu</a>
    
  <span id="backlog">  
    
@@ -57,6 +59,9 @@
 | RNF 04 | Documentações do Projeto |
 
 </div>
+
+<a href="##--api---all-tech-">--> voltar ao menu</a>
+
 <br>
 
 <span id="userstory">  
@@ -68,6 +73,8 @@
 |    user story aqui    |
  
  </div>
+ 
+ <a href="##--api---all-tech-">--> voltar ao menu</a>
 
 <span id="pastas">
    
@@ -90,3 +97,5 @@
  |   Dev Team    | Gustavo Borges Lima                   |  [![Linkedin Badge](https://img.shields.io/badge/Linkedin-blue?style=flat-square&logo=Linkedin&logoColor=white)](https://www.linkedin.com/in/NOME/) [![GitHub Badge](https://img.shields.io/badge/GitHub-111217?style=flat-square&logo=github&logoColor=white)](https://github.com/Miojoguu)              |
  |   Dev Team    | Júlia Sousa Gayotto                   |  [![Linkedin Badge](https://img.shields.io/badge/Linkedin-blue?style=flat-square&logo=Linkedin&logoColor=white)](https://www.linkedin.com/in/júlia-gayotto/) [![GitHub Badge](https://img.shields.io/badge/GitHub-111217?style=flat-square&logo=github&logoColor=white)](https://github.com/JuliaGayotto)              |
  |   Dev Team    | Lucas França Registro                 |  [![Linkedin Badge](https://img.shields.io/badge/Linkedin-blue?style=flat-square&logo=Linkedin&logoColor=white)](https://www.linkedin.com/in/NOME/) [![GitHub Badge](https://img.shields.io/badge/GitHub-111217?style=flat-square&logo=github&logoColor=white)](https://github.com/LucasFrancaRegistro)              |
+
+<a href="##--api---all-tech-">--> voltar ao menu</a>
