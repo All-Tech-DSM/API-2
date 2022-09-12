@@ -4,6 +4,7 @@
 <p align="center">
     <a href="#sobre">Sobre</a> | 
     <a href="#backlog">Backlogs</a> | 
+    <a href="#userstory">Backlogs</a> | 
     <a href="#pastas">Configuração das pastas</a> | 
     <a href="#equipe">Equipe</a>
 </p>
@@ -24,7 +25,7 @@
   
    
  ### Backlog do produto
-| Sprint | Código | Etapas                                                       | Status |
+| SPRINT | CÓDIGO | DESCRIÇÃO                                                    | STATUS |
 |:------:|:------:| ------------------------------------------------------------ |:------:|
 |   1    |  RN 00 | Criar arquivo txt para armazenar nomes dos associados        | ❌ |
 |   1    |  RN 01 | Automatização do Download e da exclusão dos diários          | ❌ |
@@ -58,10 +59,20 @@
 </div>
 <br>
 
+<span id="userstory">  
+   
+ ## :dart: User Story  
+     
+ <div align="center"> 
+ 
+|    user story aqui    |
+ 
+ </div>
+
 <span id="pastas">
    
 ## :file_folder: Configuração das pastas
-* 📂 `src`: Pasta com os códigos
+* 📂 `script`: Pasta com os códigos
 * 📂 `doc`: Pasta com Documentação relacionada ao Projeto
      
 <br>
@@ -70,8 +81,8 @@
     
 ## :busts_in_silhouette: Equipe
 
-|    Função     | Nome                                  |                                                                                                                                                      LinkedIn & GitHub                                                                                                                                                      |
-| :-----------: | :------------------------------------ | :-------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------: |
+|    Função     |    Nome    |    LinkedIn & GitHub    |
+| :-----------: | :--------- | :---------------------: |
 | Product Owner | Bruno Henrique Menezes Ramos           |  [![Linkedin Badge](https://img.shields.io/badge/Linkedin-blue?style=flat-square&logo=Linkedin&logoColor=white)](https://www.linkedin.com/in/brunohenriquemenezesramos) [![GitHub Badge](https://img.shields.io/badge/GitHub-111217?style=flat-square&logo=github&logoColor=white)](https://github.com/BrunoHenriique)              |
 | Scrum Master  | Amanda Vieira de Oliveira              |  [![Linkedin Badge](https://img.shields.io/badge/Linkedin-blue?style=flat-square&logo=Linkedin&logoColor=white)](https://www.linkedin.com/in/amanda-vo/) [![GitHub Badge](https://img.shields.io/badge/GitHub-111217?style=flat-square&logo=github&logoColor=white)](https://github.com/amandavo)              |
 |   Dev Team    | Andressa Ginevro de Souza              |  [![Linkedin Badge](https://img.shields.io/badge/Linkedin-blue?style=flat-square&logo=Linkedin&logoColor=white)](https://www.linkedin.com/in/andressa-ginevro-de-souza-55173b1b8/) [![GitHub Badge](https://img.shields.io/badge/GitHub-111217?style=flat-square&logo=github&logoColor=white)](https://github.com/Andressafatec)              |
