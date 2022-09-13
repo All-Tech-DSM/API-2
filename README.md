@@ -20,7 +20,7 @@
  O projeto tem como objetivo criar um robô automatizado que faz a leitura, identifica e busca o conteúdo do Diário Oficial do Estado de SP relacionado aos Professores Associados, emitindo o relatório diário.
     
 
-> :gear: **Tecnologias Utilizadas:** [ReactJs](https://pt-br.reactjs.org/), [JavaScript](https://developer.mozilla.org/pt-BR/docs/Web/JavaScript), [TypeScript](https://www.typescriptlang.org/), [Node](https://nodejs.org/en/about/), [Figma](http://www.figma.com), [Visual Studio Code](https://code.visualstudio.com/), [Discord](https://discord.com/), [GitHub](https://github.com/)
+> :gear: **Tecnologias Utilizadas:** [ReactJs](https://pt-br.reactjs.org/), [JavaScript](https://developer.mozilla.org/pt-BR/docs/Web/JavaScript), [TypeScript](https://www.typescriptlang.org/), [Node](https://nodejs.org/en/about/), [Python](https://www.python.org/), [HTML](https://developer.mozilla.org/pt-BR/docs/Web/HTML), [CSS](https://developer.mozilla.org/pt-BR/docs/Web/CSS), [Figma](http://www.figma.com), [Visual Studio Code](https://code.visualstudio.com/), [Discord](https://discord.com/), [GitHub](https://github.com/), [Excel](https://www.microsoft.com/pt-br/microsoft-365/free-office-online-for-the-web)
 
 <br>
 
@@ -33,14 +33,13 @@
  ### Backlog do produto
 | SPRINT | CÓDIGO | DESCRIÇÃO                                                    | STATUS |
 |:------:|:------:| ------------------------------------------------------------ |:------:|
-|   1    |  RN 00 | Criar arquivo txt para armazenar nomes dos associados        | ❌ |
-|   1    |  RN 01 | Automatização do Download e da exclusão dos diários          | ❌ |
-|   1    |  RN 00 | Raspagem de dados (leitor)                                   | ❌ |
-|   1    |  RN 00 | Criação da página de resultados da raspagem                  | ✅ |
-|   1    |  RN 00 | Conexão do back-end com o front-end                          | ❌ |
-|   2    | RNF 03 | Criação do banco de dados                                    | ❌ |
-|   2    |  RN 00 | Substituição do arquivo .txt para banco de dados             | ❌ |
-|   2    |  RN 03 | Criação de campos para cadastro dos associados no front-end  | ✅ |
+|   1    |  RN 00 | Criação do banco de dados para cadastro dos associado        | ✅ |
+|   1    |  RN 00 | Raspagem de dados (leitor)                                   | ✅ |
+|   1    |  RN 00 | Automatização do download                                    | ✅ |
+|   1    |  RN 00 | Criação da página de cadastro e consulta                     | ✅ |
+|   1    |  RN 00 | Conexão do back-end com o front-end                          | ✅ |
+|   1    |  RN 00 | Automatização da exclusão dos pdf's                          | ❌ |
+|   2    |  RN 03 | Aperfeiçoamento do back-end                                  | ❌ |
 |   3    |  RN 00 | Automatização da montagem dos relatórios                     | ❌ |
 |   3    |  RN 00 | Automatização do acompanhamento de citação com prazos        | ❌ |
 |   4    |  RN 00 | Automatização do envio de e-mails                            | ❌ |
