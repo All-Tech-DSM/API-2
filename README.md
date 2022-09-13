@@ -10,23 +10,24 @@
     <a href="#manual">Manual de usuário</a>
 </p>
 
+
 <span id="sobre">
 
 ## :pencil: Sobre o projeto
  O projeto tem como objetivo criar um robô automatizado que faz a leitura, identifica e busca o conteúdo do Diário Oficial do Estado de SP relacionado aos Professores Associados, emitindo o relatório diário.
     
-  
+
 > :gear: **Tecnologias Utilizadas:** [ReactJs](https://pt-br.reactjs.org/), [JavaScript](https://developer.mozilla.org/pt-BR/docs/Web/JavaScript), [TypeScript](https://www.typescriptlang.org/), [Figma](http://www.figma.com), [Visual Studio Code](https://code.visualstudio.com/), [Discord](https://discord.com/), [GitHub](https://github.com/)
 
 <a href="#menu">--> voltar ao menu</a>
-   
+
+
+
  <span id="backlog">  
-   
+
  ## :dart: Backlogs  
-     
+
  <div align="center">   
-  
-   
  ### Backlog do produto
 | SPRINT | CÓDIGO | DESCRIÇÃO                                                    | STATUS |
 |:------:|:------:| ------------------------------------------------------------ |:------:|
@@ -42,7 +43,7 @@
 |   3    |  RN 00 | Automatização do acompanhamento de citação com prazos        | ❌ |
 |   4    |  RN 00 | Automatização do envio de e-mails                            | ❌ |
 |   4    |  RN 00 | Responsividade                                               | ❌ |
- 
+
  #### Requisitos Funcionais  
 | CÓDIGO | DESCRIÇÃO |
 |:------:|:---------:|
@@ -50,7 +51,7 @@
 | RF 02 | Ler o arquivo, localizar o conteúdo referente ao associado e armazenar em um banco de dados |
 | RF 03 | Interface para cadastro de associados contendo dados pessoais e de contato |
 | RF 04 | Relatório diário sobre os associados citados no Diário Oficial |
- 
+
 #### Requisitos Não Funcionais  
 | CÓDIGO | DESCRIÇÃO | 
 |:------:|:---------:|
@@ -63,36 +64,53 @@
 
 <a href="#menu">--> voltar ao menu</a>
 
-<br>
+
 
 <span id="userstory">  
-   
+
  ## :dart: User Story  
-     
+
  <div align="center"> 
- 
+
 |    user story aqui    |
- 
+
  </div>
- 
+
 <a href="#menu">--> voltar ao menu</a>
 
+
+
 <span id="pastas">
-   
+
 ## :file_folder: Configuração das pastas
 * 📂 `script`: Pasta com os códigos
 * 📂 `doc`: Pasta com Documentação relacionada ao Projeto
-     
+  
+
 <br>
 
 <a href="#menu">--> voltar ao menu</a>
     
+
 <span id="manual">
-    
+
+ ## :file_folder: Manual de usuário
+* Crie uma pasta de sua preferência em sua máquina;
+* Abra o cmd e digite: git clone https://github.com/All-Tech-DSM/API-2.git
+* Feche o cmd;
+* Vá à pasta 📂 `API-2`;
+* Em seguida vá à pasta 📂 `script`;
+* Abra o cmd ou o powershell;
+* Digite: npm start;
+* A página já estara estanciada em sua localhost.
+  OBS: É necessário ter o Node.js e o Git instalado na máquina.
+  
+
 <a href="#menu">--> voltar ao menu</a>
     
+
 <span id="equipe"> 
-    
+
 ## :busts_in_silhouette: Equipe
 
 |    Função     |    Nome    |    LinkedIn & GitHub    |
