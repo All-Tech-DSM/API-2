@@ -1,15 +1,18 @@
-<h1 align="center">  API - All Tech </h1>
+<div align="center" id="menu">
+<img src="doc/img/logo_transparent.png"/></div>
 <h3 align="center"> Desenvolvimento de Aplicação Web Simples, FrontEnd Básico, com Persistência em BD Relacional </h3>
 
-<p align="center" id="menu">
+<p align="center">
     <a href="#sobre">Sobre</a> | 
     <a href="#backlog">Backlogs</a> | 
-    <a href="#userstory">Backlogs</a> | 
+    <a href="#userstory">User Story</a> | 
+    <a href="#burndown">Burndown</a> |
     <a href="#pastas">Configuração das pastas</a> | 
-    <a href="#equipe">Equipe</a> | 
-    <a href="#manual">Manual de usuário</a>
+    <a href="#manual">Manual de usuário</a> |
+    <a href="#equipe">Equipe</a>
 </p>
 
+<br>
 
 <span id="sobre">
 
@@ -17,17 +20,16 @@
  O projeto tem como objetivo criar um robô automatizado que faz a leitura, identifica e busca o conteúdo do Diário Oficial do Estado de SP relacionado aos Professores Associados, emitindo o relatório diário.
     
 
-> :gear: **Tecnologias Utilizadas:** [ReactJs](https://pt-br.reactjs.org/), [JavaScript](https://developer.mozilla.org/pt-BR/docs/Web/JavaScript), [TypeScript](https://www.typescriptlang.org/), [Figma](http://www.figma.com), [Visual Studio Code](https://code.visualstudio.com/), [Discord](https://discord.com/), [GitHub](https://github.com/)
+> :gear: **Tecnologias Utilizadas:** [ReactJs](https://pt-br.reactjs.org/), [JavaScript](https://developer.mozilla.org/pt-BR/docs/Web/JavaScript), [TypeScript](https://www.typescriptlang.org/), [Node](https://nodejs.org/en/about/), [Figma](http://www.figma.com), [Visual Studio Code](https://code.visualstudio.com/), [Discord](https://discord.com/), [GitHub](https://github.com/)
 
-<a href="#menu">--> voltar ao menu</a>
-
-
+<br>
 
  <span id="backlog">  
 
- ## :dart: Backlogs  
+ ## :pushpin: Backlogs  
 
- <div align="center">   
+ <div align="center">  
+ 
  ### Backlog do produto
 | SPRINT | CÓDIGO | DESCRIÇÃO                                                    | STATUS |
 |:------:|:------:| ------------------------------------------------------------ |:------:|
@@ -64,8 +66,6 @@
 
 <a href="#menu">--> voltar ao menu</a>
 
-
-
 <span id="userstory">  
 
  ## :dart: User Story  
@@ -78,32 +78,41 @@
 
 <a href="#menu">--> voltar ao menu</a>
 
+<span id="burndown"> 
 
+## :chart_with_downwards_trend: Burndown
+
+ <div align="center"> 
+
+|    Burndown aqui    |
+
+ </div>
 
 <span id="pastas">
 
 ## :file_folder: Configuração das pastas
 * 📂 `script`: Pasta com os códigos
-* 📂 `doc`: Pasta com Documentação relacionada ao Projeto
+* 📂 `doc`: Pasta com Documentação do Banco de Dados e fotos
   
 
 <br>
-
-<a href="#menu">--> voltar ao menu</a>
-    
+   
 
 <span id="manual">
 
- ## :file_folder: Manual de usuário
+ ## :scroll: Manual de usuário
+ 
+* É necessário ter o Node.js e o Git instalado na máquina.
+* Caso não tenha-os, instale pelo https://nodejs.org/en/ e https://git-scm.com/downloads
 * Crie uma pasta de sua preferência em sua máquina;
 * Abra o cmd e digite: git clone https://github.com/All-Tech-DSM/API-2.git
 * Feche o cmd;
 * Vá à pasta 📂 `API-2`;
 * Em seguida vá à pasta 📂 `script`;
 * Abra o cmd ou o powershell;
-* Digite: npm start;
-* A página já estara estanciada em sua localhost.
-  OBS: É necessário ter o Node.js e o Git instalado na máquina.
+* Digite: npm install react-scripts
+* Em seguida, digite: npm start
+* A página já estará estanciada em sua localhost.
   
 
 <a href="#menu">--> voltar ao menu</a>
