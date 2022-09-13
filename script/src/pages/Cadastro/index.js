@@ -37,7 +37,7 @@ function Cadastro() {
 
   function handleSubmit(e) {
     e.preventDefault();
-    alert('Clicou')
+    alert(cel)
   }
 
   return (
@@ -85,7 +85,7 @@ function Cadastro() {
 
           <div className='submits'>
             <button className="add" type="button" onClick={() => addFormField()}>Adicionar escola</button>
-            <button type='submit' className='submit'>Enviar</button>
+            <button type='submit' className='submit' onClick={() => handleSubmit()}>Enviar</button>
           </div>
 
         </form>
