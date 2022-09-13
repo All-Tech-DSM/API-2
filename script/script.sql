@@ -17,15 +17,15 @@ cidade varchar(50),
 estado varchar(50),
 complemento varchar(50));
 
+create table escolas(
+esc_cod int auto_increment primary key,
+escola varchar(100) not null 
+);
+
 create table emprego(
 emp_cod int auto_increment primary key,
 fun_cod int not null,
 foreign key(fun_cod) REFERENCES funcionario (fun_cod),
 esc_cod int not null,
 foreign key(esc_cod) REFERENCES escolas (esc_cod)
-);
-
-create table escolas(
-esc_cod int auto_increment primary key,
-escola varchar(100) not null 
 );
