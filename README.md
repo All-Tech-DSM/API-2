@@ -26,40 +26,28 @@
 
  <span id="backlog">  
 
- ## :pushpin: Backlogs  
+ ## :pushpin: Backlog do Produto  
 
- <div align="center">  
- 
- ### Backlog do produto
+ #### Épicos (Requisitos Funcionais) 
 | SPRINT | CÓDIGO | DESCRIÇÃO                                                    | STATUS |
-|:------:|:------:| ------------------------------------------------------------ |:------:|
-|   1    |  RN 00 | Criação do banco de dados para cadastro dos associado        | ✅ |
-|   1    |  RN 00 | Raspagem de dados (leitor)                                   | ✅ |
-|   1    |  RN 00 | Automatização do download                                    | ✅ |
-|   1    |  RN 00 | Criação da página de cadastro e consulta                     | ✅ |
-|   1    |  RN 00 | Conexão do back-end com o front-end                          | ✅ |
-|   1    |  RN 00 | Automatização da exclusão dos pdf's                          | ❌ |
-|   2    |  RN 03 | Aperfeiçoamento do back-end                                  | ❌ |
-|   3    |  RN 00 | Automatização da montagem dos relatórios                     | ❌ |
-|   3    |  RN 00 | Automatização do acompanhamento de citação com prazos        | ❌ |
-|   4    |  RN 00 | Automatização do envio de e-mails                            | ❌ |
-|   4    |  RN 00 | Responsividade                                               | ❌ |
-
- #### Requisitos Funcionais  
-| CÓDIGO | DESCRIÇÃO |
-|:------:|:---------:|
-| RF 01 | Baixar Diário Oficial em pdf, realizar a gestão do armazenamento e descarte dos arquivos |
-| RF 02 | Ler o arquivo, localizar o conteúdo referente ao associado e armazenar em um banco de dados |
-| RF 03 | Interface para cadastro de associados contendo dados pessoais e de contato |
-| RF 04 | Relatório diário sobre os associados citados no Diário Oficial |
+|:---------:|--------|--------|:------:|
+| 1      | RF1    | Cadastro dos associado                                       |   ✅    |
+| 1      | RF2    | Raspagem de dados (leitor)                                   |   ✅    |
+| 1      | RF3    | Automação do download e da exclusão dos pdf's                |   ✅    |
+| 1      | RF4    | Criação das páginas de cadastro (com dados pessoais e de contato) e consulta |   ✅    |
+| 2      | RF5    | Armazenamento do histórico de consultas no front-end         |   ❌    |
+| 3      | RF6    | Automação da montagem do relatório diário sobre os associados citados no Diário Oficial |   ❌    |
+| 3      | RF7    | Automação do acompanhamento de citação com prazos            |   ❌    |
+| 4      | RF8    | Automação do envio de e-mails                                |   ❌    |
 
 #### Requisitos Não Funcionais  
-| CÓDIGO | DESCRIÇÃO | 
-|:------:|:---------:|
-| RNF 01 | Linguagem Node.js |
-| RNF 02 | Programação em TypeScript e JavaScript |
-| RNF 03 | Banco de Dados Relacional |
-| RNF 04 | Documentações do Projeto |
+| CÓDIGO | DESCRIÇÃO | STATUS |
+|:------:|:------:|:------:|
+| RNF1 | Linguagem Node.js | ✅ |
+| RNF2 | Programação em TypeScript e JavaScript | ✅ |
+| RNF3 | Banco de Dados Relacional (MySQL) | ✅ |
+| RNF4 | Documentações do Projeto | ❌ |
+| RNF5   |             Responsividade             |   ❌    |
 
 </div>
 
@@ -70,8 +58,9 @@
  ## :dart: User Story  
 
  <div align="center"> 
-
 |    user story aqui    |
+
+
 
  </div>
 
@@ -95,12 +84,12 @@
   
 
 <br>
-   
+
 
 <span id="manual">
 
  ## :scroll: Manual de usuário
- 
+
 * É necessário ter o Node.js e o Git instalado na máquina.
 * Caso não tenha-os, instale pelo https://nodejs.org/en/ e https://git-scm.com/downloads
 * Crie uma pasta de sua preferência em sua máquina;
