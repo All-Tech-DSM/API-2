@@ -1,6 +1,7 @@
 import './style.css';
 import { IMaskInput } from "react-imask";
-import { useState } from 'react';
+import React, { useEffect, useState } from "react";
+import Axios from "axios";
 
 function Cadastro() {
   const [nome, setNome] = useState('');
@@ -38,6 +39,24 @@ function Cadastro() {
   function handleSubmit(e) {
     e.preventDefault();
     alert(cel)
+
+    Axios.post("http://localhost:3001/register", {
+      nome: nome,
+      email: email,
+      cpf: cpf,
+      nas_data: nasc,
+      tel_fixo: tel,
+      tel_celular: cel,
+      cep: cep,
+      numero: num,
+      rua: rua,
+      bairro: bairro,
+      cidade: city,
+      estado: estado,
+      complemento: ''
+    }).then((res)=>{
+      console.log(res)
+    })
   }
 
   return (
