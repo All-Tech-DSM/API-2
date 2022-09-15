@@ -1,6 +1,6 @@
 import './style.css';
 import { IMaskInput } from "react-imask";
-import React, { useEffect, useState } from "react";
+import React, { useState } from "react";
 import Axios from "axios";
 
 function Cadastro() {

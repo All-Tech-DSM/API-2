@@ -1,11 +1,14 @@
-
 import { Link } from 'react-router-dom';
+import icone from "./icone_transparent.png"
 import './style.css';
 
 function Header(){
     return(
         <header>
-            <p>All Teach</p>
+            <div className='logo'>
+                <img src={icone}/>
+                <p>All Teach</p>
+            </div>
 
             <div className='nav'>
                 <Link to="/">Cadastro</Link>

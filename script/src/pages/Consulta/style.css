@@ -28,13 +28,22 @@ table {
     margin-top: 2%;
 }
 
+/* linhas pares (even) */
+table tbody tr:nth-child(even) {
+    background-color: rgb(223, 219, 219);
+}
+/* linhas ímpares (odd) */
+table tbody tr:nth-child(odd) {
+    background-color: rgb(254, 255, 241);
+}
+
 table caption {
     font-size: 1.5em;
     margin: .5em 0 .75em;
 }
 
 table tr{
-    background-color: rgb(170, 170, 170);
+    background-color: #EBE7D0;
     border: 1px solid white;
     padding: .35em;
 } 
@@ -57,5 +66,5 @@ tr button{
 }
 
 .container-table{
-    padding: 1px 90px;
+    padding: 1px 200px;
 }

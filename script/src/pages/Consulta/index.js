@@ -1,18 +1,10 @@
 //import Modal from '../../components/Modal'
 import './style.css';
-import { FiArrowRight } from "react-icons/fi";
+import { FiDownload } from "react-icons/fi";
 import { useState } from 'react'
 
 function Consulta() {
   const [dados, setDados] = useState([]);
-
-  const [showPostModal, setShowPostModal] = useState(false);
-  const [detail, setDetail] = useState();
-
-  function togglePostModal(item){
-    setShowPostModal(!showPostModal); //trocando de true para false
-    setDetail();
-  }
 
   return (
     <div>
@@ -36,11 +28,41 @@ function Consulta() {
               <tbody>
                 
                     <tr>
-                      <td data-label="Nome">a</td>
-                      <td data-label="Email">a@a.com</td>
+                      <td data-label="Nome">Amanda Vieira de Oliveira</td>
+                      <td data-label="Email">amandavieiradeoliveira@gmail.com</td>
                       <td data-label="Consulta">
-                        <button onClick={() => togglePostModal()}>
-                          <FiArrowRight color='#FFF' size={25} />
+                        <button>
+                          <FiDownload size={25} />
+                        </button>
+                      </td>
+                    </tr>
+
+                    <tr>
+                      <td data-label="Nome">Bianca Oliveira Vieira</td>
+                      <td data-label="Email">biancaoliveiravieira@gmail.com</td>
+                      <td data-label="Consulta">
+                        <button>
+                          <FiDownload size={25} />
+                        </button>
+                      </td>
+                    </tr>
+
+                    <tr>
+                      <td data-label="Nome">Camila Vieira de Oliveira</td>
+                      <td data-label="Email">amandavieiradeoliveira@gmail.com</td>
+                      <td data-label="Consulta">
+                        <button>
+                          <FiDownload size={25} />
+                        </button>
+                      </td>
+                    </tr>
+
+                    <tr>
+                      <td data-label="Nome">Damaris Oliveira Vieira</td>
+                      <td data-label="Email">biancaoliveiravieira@gmail.com</td>
+                      <td data-label="Consulta">
+                        <button>
+                          <FiDownload size={25} />
                         </button>
                       </td>
                     </tr>
@@ -51,13 +73,6 @@ function Consulta() {
         </>
       )}
     </div>
-/*
-    {showPostModal && (
-      <Modal
-        conteudo={detail}
-        close={togglePostModal}
-      />
-    )} */
   );
 }
 

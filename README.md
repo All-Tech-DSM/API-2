@@ -7,6 +7,7 @@
     <a href="#backlog">Backlogs</a> | 
     <a href="#userstory">User Story</a> | 
     <a href="#burndown">Burndown</a> |
+    <a href="#mockup">Mockup</a> |
     <a href="#pastas">Configuração das pastas</a> | 
     <a href="#manual">Manual de usuário</a> |
     <a href="#equipe">Equipe</a>
@@ -51,7 +52,7 @@
 
 </div>
 
-<a href="#menu">--> voltar ao menu</a>
+<a href="#menu">Voltar ao menu</a>
 
 <span id="userstory">  
 
@@ -64,7 +65,7 @@
 
  </div>
 
-<a href="#menu">--> voltar ao menu</a>
+<a href="#menu">Voltar ao menu</a>
 
 <span id="burndown"> 
 
@@ -75,6 +76,22 @@
 |    Burndown aqui    |
 
  </div>
+
+ <span id="mockup"> 
+  
+## :desktop_computer: Mockup
+  
+<div align="center ">
+
+#### Tela de cadastro
+<img src="doc/img/mockup_cadastro.png" width="700"/>
+    
+#### Tela de consulta
+<img src="doc/img/mockup_consulta.png" width="700"/>
+
+</div>
+<a href="#menu">Voltar ao menu</a>
+
 
 <span id="pastas">
 
@@ -110,6 +127,9 @@
 * Em seguida, digite: npm start
 * A página já estará estanciada em sua localhost.
   
+<div align="center">
+    <img src="doc/img/manual.gif" width="700"/>
+</div>
 
 <a href="#menu">--> voltar ao menu</a>
     
@@ -128,4 +148,4 @@
  |   Dev Team    | Júlia Sousa Gayotto                   |  [![Linkedin Badge](https://img.shields.io/badge/Linkedin-blue?style=flat-square&logo=Linkedin&logoColor=white)](https://www.linkedin.com/in/júlia-gayotto/) [![GitHub Badge](https://img.shields.io/badge/GitHub-111217?style=flat-square&logo=github&logoColor=white)](https://github.com/JuliaGayotto)              |
  |   Dev Team    | Lucas França Registro                 |  [![Linkedin Badge](https://img.shields.io/badge/Linkedin-blue?style=flat-square&logo=Linkedin&logoColor=white)](https://www.linkedin.com/in/NOME/) [![GitHub Badge](https://img.shields.io/badge/GitHub-111217?style=flat-square&logo=github&logoColor=white)](https://github.com/LucasFrancaRegistro)              |
 
-<a href="#menu">--> voltar ao menu</a>
+<a href="#menu">Voltar ao menu</a>
