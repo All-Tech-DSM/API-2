@@ -90,12 +90,20 @@
 
  ## :scroll: Manual de usuário
 
-* É necessário ter o Node.js e o Git instalado na máquina.
-* Caso não tenha-os, instale pelo https://nodejs.org/en/ e https://git-scm.com/downloads
+* É necessário ter o Node.js, MySQL e o Git instalado na máquina.
+* Caso não tenha-os, instale pelo https://nodejs.org/en/, https://dev.mysql.com e https://git-scm.com/downloads
 * Crie uma pasta de sua preferência em sua máquina;
 * Abra o cmd e digite: git clone https://github.com/All-Tech-DSM/API-2.git
 * Feche o cmd;
 * Vá à pasta 📂 `API-2`;
+* Em seguida vá à pasta 📂 `server_db`;
+* Execute o aquivo `script.sql` no MySQL;
+* Em seguida abra o arquivo `index.js`
+* Vá na linha 06 e configure a rota de seu MySQL;
+* Em seguida salve o arquivo e feche-o;
+* Ainda na pasta 📂 `server_db` abra o cmd e digite: npm install;
+* Após a instalação, digite: node index.js;
+* Saia da pasta 📂 `server_db` voltando para 📂 `API-2`;
 * Em seguida vá à pasta 📂 `script`;
 * Abra o cmd ou o powershell;
 * Digite: npm install react-scripts
