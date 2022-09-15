@@ -53,7 +53,8 @@ function Cadastro() {
       bairro: bairro,
       cidade: city,
       estado: estado,
-      complemento: ''
+      complemento: comp,
+      escolas: formValue
     }).then((res)=>{
       console.log(res)
     })
