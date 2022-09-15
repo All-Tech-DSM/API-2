@@ -8,10 +8,32 @@ async function connect(){
   return connection;
 }
 
-async function insert(nome,email,cpf,nas_data,tel_fixo,tel_celular,cep,numero,rua,bairro,cidade,estado,complemento){
+async function insert_fun(nome,email,cpf,nas_data,tel_fixo,tel_celular,cep,numero,rua,bairro,cidade,estado,complemento){
   const con = await connect();
   con.query(`insert into funcionario(nome,email,cpf,nas_data,tel_fixo,tel_celular,cep,numero,rua,bairro,cidade,estado,complemento)
   values ('${nome}','${email}','${cpf}','${nas_data}','${tel_fixo}','${tel_celular}','${cep}','${numero}','${rua}','${bairro}','${cidade}','${estado}','${complemento}');`)
+}
+
+async function insert_esc(escolas,cpf){
+  for (k in escolas){
+    const escola = escolas[k].escolas.toUpperCase()
+    const con = await connect();
+    var [rows] = await con.query(`select esc_cod from escolas where escola like "%${escola}";`)
+    rows = rows[0]
+
+    if (rows == undefined){
+      con.query(`insert into escolas(escola) values ("${escola}");`);
+      var [rows] = await con.query(`select esc_cod from escolas where escola like "%${escola}";`)
+      rows = rows[0]
+    }
+    var {esc_cod} = rows
+
+    var [rows] = await con.query(`select fun_cod from funcionario where cpf like "%${cpf}";`)
+    rows = rows[0]
+    var fun_cod = rows.fun_cod
+
+    con.query(`insert into emprego(fun_cod,esc_cod) values (${fun_cod},${esc_cod});`);
+  }
 }
 
 const express = require("express");
@@ -36,13 +58,15 @@ app.post("/register", (req, res) => {
   const { cidade } = req.body;
   const { estado } = req.body;
   const { complemento } = req.body;
+  const { escolas } = req.body;
 
   const dia = nas_data.substring(0,2)
   const mes = nas_data.substring(3,5)
   const ano = nas_data.substring(6,)
   var nas_data = ano + '-' + mes + '-' + dia
 
-  insert(nome,email,cpf,nas_data,tel_fixo,tel_celular,cep,numero,rua,bairro,cidade,estado,complemento)
+  insert_fun(nome,email,cpf,nas_data,tel_fixo,tel_celular,cep,numero,rua,bairro,cidade,estado,complemento)
+  insert_esc(escolas,cpf)
 });
 
 
