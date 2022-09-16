@@ -1,10 +1,7 @@
-
 import MySQLdb
 from datetime import date
 from coletor import coletor
 import requests
-
-
 
 con = MySQLdb.connect( user="root", password="fatec", db="teste")
 cur = con.cursor()
@@ -21,7 +18,7 @@ data2 = data.replace('-', '.')
 data3 = datatext.strftime( '%d/%m/%Y' )
 data3parte2 = data3.replace('/', '.')
 data4 = data.replace('/', '%2f')
-#nomes = ['"rodrigo silva"', '"rodrigo garcia"']
+
 res = []
 
 for n in range(len(nomes)):
@@ -39,4 +36,3 @@ for links in res:
 
 cur.execute('select fun_cod from funcionario')
 feedback=cur.fetchall()
-
