@@ -4,9 +4,9 @@ from coletor import coletor
 import requests
 import os
 
-con = MySQLdb.connect( user="root", password="franca", db="teste")
+con = MySQLdb.connect( user="root", password="fatec", db="cadastro")
 cur = con.cursor()
-cur.execute('select nome from nomes')
+cur.execute('select nome from funcionario;')
 feedback=cur.fetchall()
 nomes = []
 for i in range(len(feedback)):
@@ -41,7 +41,7 @@ for links in res:
             f.write(r.content)
 
 
-cur.execute('select cod from nomes')
+cur.execute('select fun_cod from funcionario;')
 feedback=cur.fetchall()
 print(feedback)
 for i in range(len(res)):
