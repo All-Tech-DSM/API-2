@@ -6,12 +6,11 @@ import os
 
 con = MySQLdb.connect( user="root", password="fatec", db="cadastro")
 cur = con.cursor()
-cur.execute('select nome from funcionario;')
+cur.execute('SELECT nome FROM funcionario ORDER BY nome;')
 feedback=cur.fetchall()
 nomes = []
 for i in range(len(feedback)):
     nomes.append('"'+feedback[i][0].lower()+'"')
-print(nomes)
 data = str(date.today())
 datatext = date.today()
 data1 = data.replace('-', '')
@@ -41,10 +40,13 @@ for links in res:
             f.write(r.content)
 
 
-cur.execute('select fun_cod from funcionario;')
+cur.execute('SELECT fun_cod FROM funcionario ORDER BY nome;')
 feedback=cur.fetchall()
-print(feedback)
-for i in range(len(res)):
-    res[i][0] = feedback[i][0]
+filtro = res
+res = []
+for i in range(len(filtro)):
+    if len(filtro[i]) > 1:
+        filtro[i][0] = feedback[i][0]
+        res.append(filtro[i])
 
 print(res)
