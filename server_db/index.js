@@ -39,6 +39,7 @@ async function insert_esc(escolas,cpf){
 const express = require("express");
 const app = express();
 const cors = require("cors");
+const { exec } = require('node:child_process')
 
 
 app.use(express.json());
@@ -67,6 +68,18 @@ app.post("/register", (req, res) => {
 
   insert_fun(nome,email,cpf,nas_data,tel_fixo,tel_celular,cep,numero,rua,bairro,cidade,estado,complemento)
   insert_esc(escolas,cpf)
+});
+
+app.get("/pdf_inf", (req, resp) => {
+  exec('python buscador.py', (erro, res) => {
+      if (erro) {
+          console.error("erro: ", erro)
+          return 
+      }
+  
+      console.log(res)
+      resp.send(res);
+  })
 });
 
 

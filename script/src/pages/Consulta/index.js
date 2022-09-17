@@ -1,10 +1,15 @@
 //import Modal from '../../components/Modal'
 import './style.css';
 import { FiDownload } from "react-icons/fi";
-import { useState } from 'react'
+import { useState } from 'react';
+import Axios from "axios";
 
 function Consulta() {
   const [dados, setDados] = useState([]);
+
+  Axios.get("http://localhost:3001/pdf_inf").then((response) => {
+    console.log(response.data);
+  });
 
   return (
     <div>
