@@ -1,7 +1,7 @@
 
 import requests
 
-def coletor(url, nome):
+def coletor(url, info):
     r = requests.get(url)
     start = r.text.find('<div class="card shadow-sm resultadoBuscaItem">')
     end = r.text.find('<div class="rodape">')
@@ -9,7 +9,8 @@ def coletor(url, nome):
     final = 0
     com_ex = '<a class="bg-light text-dark" style="text-decoration: none;" href="/DO/BuscaDO2001Documento'
     fin_ex = len('" target="_blank">')
-    links = [nome]
+    res = [info[0], info[1]]
+    links = []
     c = 0
     while True:
         começo = recorte.find(com_ex) + len(com_ex) + 5
@@ -23,7 +24,8 @@ def coletor(url, nome):
                 recorte = recorte[final+1:]
                 c = 0
                 break
-    return links
+    res.append(links)
+    return res
 
 #a função recebe o nome da pessoa que esta sendo pesquisada apenas por referencia pois a lista retornada 
 #tera o primeiro elemento como o nome assim organizando os links junto com o nome procurado
