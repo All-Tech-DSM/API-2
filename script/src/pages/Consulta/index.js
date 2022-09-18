@@ -1,63 +1,52 @@
 //import Modal from '../../components/Modal'
 import './style.css';
 import { FiDownload } from "react-icons/fi";
-import { useState } from 'react';
+import React,{ useState, useEffect} from "react";
 import Axios from "axios";
 
 function Consulta() {
-  const [dados, setDados] = useState([]);
-  const [dado, setDado] = useState([]);
-
-
-    Axios.get("http://localhost:3001/pdf_inf").then((response) => {
-      setDado(response.data);
-    });
-  
-  console.log(dado)
-
-  if (!dado) return null
+  const [listGames, setListGames] = useState([]);
+    
+  useEffect(() => {
+      Axios.get(`http://localhost:3001/pdf_inf`).then((resp) => {
+          setListGames(resp.data);
+          console.log(resp.data)
+      });
+  }, [])
 
   
   return (
     <div>
-      {dados.lenght === true ? (
-        <div className='none'>
-          <span>Nenhum dado encontrado...</span>
-        </div>
-      ) : (
-        <>
-          <p id='dadodia'>Dado(s) do dia</p>
-          <div className='container-table'>
-            <table>
-              <thead>
-                <tr>
-                  <th scope="col">Nome</th>
-                  <th scope="col">Email</th>
-                  <th scope="col">Consulta</th>
-                </tr>
-              </thead>
+      <p id='dadodia'>Dado(s) do dia</p>
+      <div className='container-table'>
+        <table>
+          <thead>
+            <tr>
+              <th scope="col">Nome</th>
+              <th scope="col">Email</th>
+              <th scope="col">Consulta</th>
+            </tr>
+          </thead>
 
-              <tbody>
-                
-              {
-                  dado.map((pss,index) => (
-                    <tr>
-                      <td key={index[0]} data-label="Nome">{ pss[0] }</td>
-                      <td key={index[1]} data-label="Email">{ pss[1] }</td>
-                      <td key={index[2]} data-label="Consulta">
-                        <a href={pss[2]}>
-                          <FiDownload size={25} />
-                        </a>
-                      </td>
-                    </tr>)
-                  )
-                } 
-     
-              </tbody>
-            </table>
-          </div>
-        </>
-      )}
+          <tbody>
+            {typeof listGames !== 'undefined'&& listGames.map((value) => {
+                return !value.envio ? 
+                <tr>
+                  <td data-label="Nome">{ value[0] }</td>
+                  <td data-label="Email">{ value[1] }</td>
+                  <td data-label="Consulta">
+                    <a href={ value[2] } target="_blank">
+                      <FiDownload size={25} />
+                    </a>
+                  </td>
+                </tr>
+                : null
+            })}
+            
+  
+          </tbody>
+        </table>
+      </div>
     </div>
   );
 }
