@@ -5,7 +5,7 @@
 <p align="center">
     <a href="#sobre">Sobre</a> | 
     <a href="#backlog">Backlogs</a> | 
-    <a href="#userstory">User Story</a> | 
+    <a href="#userstories">User Story</a> | 
     <a href="#burndown">Burndown</a> |
     <a href="#mockup">Mockup</a> |
     <a href="#pastas">Configuração das pastas</a> | 
@@ -32,10 +32,10 @@
  #### Épicos (Requisitos Funcionais) 
 | SPRINT | CÓDIGO | DESCRIÇÃO                                                    | STATUS |
 |:---------:|--------|--------|:------:|
-| 1      | RF1    | Cadastro dos associado                                       |   ✅    |
+| 1      | RF1    | Cadastro dos associados                                     |   ✅    |
 | 1      | RF2    | Raspagem de dados (leitor)                                   |   ✅    |
-| 1      | RF3    | Automação do download e da exclusão dos pdf's                |   ✅    |
-| 1      | RF4    | Criação das páginas de cadastro (com dados pessoais e de contato) e consulta |   ✅    |
+| 1     | RF3 | Consultas de dados |   ✅    |
+| 1      | RF4    | Automação do download e da exclusão dos pdf's |   ✅    |
 | 2      | RF5    | Armazenamento do histórico de consultas no front-end         |   ❌    |
 | 3      | RF6    | Automação da montagem do relatório diário sobre os associados citados no Diário Oficial |   ❌    |
 | 3      | RF7    | Automação do acompanhamento de citação com prazos            |   ❌    |
@@ -54,12 +54,13 @@
 
 <a href="#menu">Voltar ao menu</a>
 
-<span id="userstory">  
+<span id="userstories">  
 
- ## :dart: User Story  
+ ## :dart: User Stories  
 
  <div align="center"> 
-|    user story aqui    |
+<img src="doc/img/us.png" width="700"/>
+
 
 
 
@@ -72,20 +73,20 @@
 ## :chart_with_downwards_trend: Burndown
 
  <div align="center"> 
-
-|    Burndown aqui    |
+<img src="doc/img/burndown_s1.png" width="700"/>
 
  </div>
 
  <span id="mockup"> 
-  
+
 ## :desktop_computer: Mockup
-  
+
 <div align="center ">
 
 #### Tela de cadastro
 <img src="doc/img/mockup_cadastro.png" width="700"/>
     
+
 #### Tela de consulta
 <img src="doc/img/mockup_consulta.png" width="700"/>
 
