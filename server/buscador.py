@@ -9,8 +9,6 @@ def func():
     cur.execute('SELECT nome, email FROM funcionario ORDER BY nome;')
     feedback=cur.fetchall()
     nomes = []
-    if nomes == []:
-        return None
     for i in range(len(feedback)):
         buffer = []
         buffer.append('"'+feedback[i][0].lower()+'"')
@@ -58,6 +56,6 @@ def func():
             res.append(i)
     res.pop()
     res.pop(0)
-    return res
+    print(res)
 
-print(func())
+func()
