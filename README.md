@@ -108,29 +108,54 @@
 
  ## :scroll: Manual de usuário
 
-* É necessário ter o Node.js, MySQL e o Git instalado na máquina.
-* Caso não tenha-os, instale pelo https://nodejs.org/en/, https://dev.mysql.com e https://git-scm.com/downloads
+* É necessário ter o Node.js, MySQL, Python(versão 3.10),  Visual Studio Code e o Git instalado na máquina.
+
+* Caso não tenha-os, instale pelo https://nodejs.org/en/, https://dev.mysql.com, https://www.python.org/downloads/, https://code.visualstudio.com/Download e https://git-scm.com/downloads
+
 * Crie uma pasta de sua preferência em sua máquina;
+
 * Abra o cmd e digite: git clone https://github.com/All-Tech-DSM/API-2.git
+
 * Feche o cmd;
+
+* Abra o MySQL e execute o arquivo `script.sql` ;
+
+  <img src="doc/img/tutorial_banco.jpeg" width="700"/>
+
 * Vá à pasta 📂 `API-2`;
-* Em seguida vá à pasta 📂 `server_db`;
-* Execute o aquivo `script.sql` no MySQL;
-* Em seguida abra o arquivo `index.js`
+
+* Abra a pasta no VS Code;
+
+* Em seguida acesse a pasta 📂 server e abra o arquivo `index.js`;
+
 * Vá na linha 06 e configure a rota de seu MySQL;
+
+  <img src="doc/img/banco_index_tutorial.jpeg" width="700"/>
+
 * Em seguida salve o arquivo e feche-o;
-* Ainda na pasta 📂 `server_db` abra o cmd e digite: npm install;
+
+* Abre o arquivo “buscador.py” e configure os dados do MySQL na linha 7;
+
+  <img src="doc/img/banco_tutorial_buscador.jpeg" width="700"/>
+
+* Ainda na pasta 📂 `server` abra o cmd e digite: npm install;
+
+* Em seguida, digite o comando pip install -r req.txt;
+
 * Após a instalação, digite: node index.js;
-* Saia da pasta 📂 `server_db` voltando para 📂 `API-2`;
+
+* Abra um novo terminal e volte para 📂 `API-2`;
+
 * Em seguida vá à pasta 📂 `script`;
-* Abra o cmd ou o powershell;
-* Digite: npm install react-scripts
+
+* Abra o cmd ;
+
+* Digite: npm install 
+
 * Em seguida, digite: npm start
+
 * A página já estará estanciada em sua localhost.
   
-<div align="center">
-    <img src="doc/img/manual.gif" width="700"/>
-</div>
 
 <a href="#menu">--> voltar ao menu</a>
     
