@@ -9,6 +9,8 @@ def func():
     cur.execute('SELECT nome, email FROM funcionario ORDER BY nome;')
     feedback=cur.fetchall()
     nomes = []
+    if nomes == []:
+        return None
     for i in range(len(feedback)):
         buffer = []
         buffer.append('"'+feedback[i][0].lower()+'"')
@@ -18,7 +20,7 @@ def func():
     datatext = date.today()
     data1 = data.replace('-', '')
     data2 = data.replace('-', '.')
-    data3 = datatext #.strftime( '%d/%m/%Y' )
+    data3 = datatext.strftime( '%d/%m/%Y' )
     data3parte2 = data3.replace('/', '.')
     data4 = data.replace('/', '%2f')
 
@@ -56,6 +58,6 @@ def func():
             res.append(i)
     res.pop()
     res.pop(0)
-    print(res)
+    return res
 
-func()
+print(func())
