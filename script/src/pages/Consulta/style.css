@@ -68,3 +68,8 @@ tr button{
 .container-table{
     padding: 1px 200px;
 }
+.botao{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}

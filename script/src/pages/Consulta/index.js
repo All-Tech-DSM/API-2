@@ -34,16 +34,19 @@ function Consulta() {
                 <tr>
                   <td data-label="Nome">{ value[0] }</td>
                   <td data-label="Email">{ value[1] }</td>
-                  <td data-label="Consulta">
-                    <a href={ value[2] } target="_blank">
+
+                  
+                    <td data-label="Consulta">
+                    {value[2].map((link) => 
+                    <a className='botao' href={ link } target="_blank">
                       <FiDownload size={25} />
                     </a>
-                  </td>
+                    )}
+                    </td>
+                  
                 </tr>
                 : null
             })}
-            
-  
           </tbody>
         </table>
       </div>
