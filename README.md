@@ -120,7 +120,7 @@
 
 * Feche o cmd;
 
-* Abra o MySQL e execute o arquivo `script.sql` ;
+* Abra o MySQL e execute o arquivo `script.sql` (Nessa sprint é necessario inserir os dados do primeiro associado antes de executar o script);
 
   <img src="doc/img/tutorial_banco.jpeg" width="700"/>
 
