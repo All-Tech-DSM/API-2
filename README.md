@@ -47,7 +47,7 @@
 | RNF1 | Linguagem Node.js | ✅ |
 | RNF2 | Programação em TypeScript e JavaScript | ✅ |
 | RNF3 | Banco de Dados Relacional (MySQL) | ✅ |
-| RNF4 | Documentações do Projeto | ❌ |
+| RNF4 | Documentações do Projeto | ✅ |
 | RNF5   |             Responsividade             |   ❌    |
 
 </div>
@@ -158,11 +158,11 @@
 
 * A página já estará estanciada em sua localhost.
 
-* OBS: caso o usuário cadastre um novo funcionario, sera necessário:
+* Caso o usuário cadastre um novo funcionario, após o cadastro será necessário:
 
-* Ainda na pasta 📂 `server` abra o cmd e de ctrl + C, para derrubar o serividor;
+* Ir na pasta 📂 `server`, abrir o cmd e dar ctrl + C, para derrubar o serividor;
 
-* Em seguida, digite: node index.js;
+* Em seguida, digite: node index.js para ver o resultado da consulta do Diário ;
   
 
 <a href="#menu">--> voltar ao menu</a>
