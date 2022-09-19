@@ -4,8 +4,8 @@ use cadastro;
 create table funcionario(
 fun_cod int auto_increment primary key,
 nome varchar(70) not null, 
-email varchar(40) not null unique key, 
-cpf varchar(11)  not null unique key, 
+email varchar(40) not null, 
+cpf varchar(14)  not null, 
 nas_data date, 
 tel_fixo varchar(15), 
 tel_celular varchar(15),
