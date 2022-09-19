@@ -97,8 +97,10 @@
 <span id="pastas">
 
 ## :file_folder: Configuração das pastas
-* 📂 `script`: Pasta com os códigos
-* 📂 `doc`: Pasta com Documentação do Banco de Dados e fotos
+* 📂 `script`: Pasta com os códigos do react/front;
+* 📂 `doc`: Pasta com Documentação do Banco de Dados e fotos;
+* 📂 `server`: Pasta com os códigos bara conexão com o banco e consulta do diário oficial;
+* 📂 `PDF`: Pata onde são armazenados os PDFs baixados;
   
 
 <br>
@@ -155,6 +157,12 @@
 * Em seguida, digite: npm start
 
 * A página já estará estanciada em sua localhost.
+
+* OBS: caso o usuário cadastre um novo funcionario, sera necessário:
+
+* Ainda na pasta 📂 `server` abra o cmd e de ctrl + C, para derrubar o serividor;
+
+* Em seguida, digite: node index.js;
   
 
 <a href="#menu">--> voltar ao menu</a>
