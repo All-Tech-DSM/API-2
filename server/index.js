@@ -71,13 +71,53 @@ app.post("/register", (req, res) => {
 });
 
 var dados = []
-exec('python buscador.py', (erro, res) => {
+exec('python buscador.py', (erro, str) => {
   if (erro) {
       console.error("erro: ", erro)
       return 
   }
-  dados = res
+
+  let str_a = str.split("'*',")
+  function listinha(str){
+  if(str[-1] = ' '){var ind_f = -3}else{var ind_f = -2}
+  str = str.slice(2, ind_f)
+  lista = str.split(',')
+  listaf = Array()
+  for(let i in lista) {
+      lista[i] = lista[i].replace(' ', '')
+      lista[i] = lista[i].replace("'", '')
+      lista[i] = lista[i].replace('[', '')
+      lista[i] = lista[i].replace(']', '')
+      lista[i] = lista[i].replace("'", '')
+      listaf.push(lista[i])
+  }
+  return listaf
+  }
+  var lista_a = Array()
+  for(var i in str_a){
+      lista_a.push(listinha(str_a[i]))
+      
+  }
+  var lista_final = Array()
+  for(var k = 1; lista_a.length >= k; ++k){
+      var lista_p = new Array()
+      var listinha = lista_a[k-1]
+      for(var sla_y = 1; listinha.length >=sla_y; ++sla_y){
+          lista_p.push(listinha[sla_y-1])
+          
+      }
+      lista_final.push(lista_p)
+  }
+  var lista_filtro = new Array()
+  for(var k = 1; lista_final.length >= k; ++k){
+    if(lista_final[k-1].length > 1){
+      lista_filtro.push(lista_final[k-1])
+    }
+  }
+  dados = lista_filtro
 })
+
+var x = [['"lucineia pereira de paula"', 'eduardofaland@gmail.com', ['http://www.imprensaoficial.com.br/DO/GatewayPDF.aspx?link=%2f2022%2fexecutivo+secao+ii%2fsetembro%2f17%2fpag_0038_40216fc28fbc65eb50010603475e29e3.pdf&pagina=38&data=17/09/2022&caderno=ExecutivoII&paginaordenacao=100038']]]
 
 app.get("/pdf_inf", (req, resp) => {
       resp.send(dados);

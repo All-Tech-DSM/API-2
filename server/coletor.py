@@ -10,7 +10,6 @@ def coletor(url, info):
     com_ex = '<a class="bg-light text-dark" style="text-decoration: none;" href="/DO/BuscaDO2001Documento'
     fin_ex = len('" target="_blank">')
     res = [info[0], info[1]]
-    links = []
     c = 0
     while True:
         começo = recorte.find(com_ex) + len(com_ex) + 5
@@ -20,11 +19,10 @@ def coletor(url, info):
             c+= 1
             if k == '>':
                 final = começo+c
-                links.append(('http://www.imprensaoficial.com.br/DO/GatewayPDF' + recorte[começo:final-fin_ex]).replace(' ', ''))
+                res.append(('http://www.imprensaoficial.com.br/DO/GatewayPDF' + recorte[começo:final-fin_ex]).replace(' ', ''))
                 recorte = recorte[final+1:]
                 c = 0
                 break
-    res.append(links)
     return res
 
 #a função recebe o nome da pessoa que esta sendo pesquisada apenas por referencia pois a lista retornada 
