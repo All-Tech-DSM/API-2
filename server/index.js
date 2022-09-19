@@ -114,10 +114,32 @@ exec('python buscador.py', (erro, str) => {
       lista_filtro.push(lista_final[k-1])
     }
   }
-  dados = lista_filtro
+
+  var lista_vdd = new Array()
+  for(var k = 0; (lista_filtro.length-1)>= k; ++k ){
+      //console.log(x[k])
+      var lista_peq_vdd = new Array()
+      var lista_peq = lista_filtro[k]
+      var lista_link = new Array()
+      for(var y = 2; (lista_peq.length-1) >= y; ++y){
+          //console.log(lista_peq[y])
+          lista_link.push(lista_peq[y])
+      }
+      //console.log(lista_link)
+      for(var e = 0; (lista_peq.length-1) >= e; ++e){
+          lista_peq_vdd.push(lista_peq[e])
+          if(e == 1){
+              break
+          }
+      }
+      lista_peq_vdd.push(lista_link)
+    lista_vdd.push(lista_peq_vdd)
+  }
+  console.log(lista_vdd)
+
+  dados = lista_vdd
 })
 
-var x = [['"lucineia pereira de paula"', 'eduardofaland@gmail.com', ['http://www.imprensaoficial.com.br/DO/GatewayPDF.aspx?link=%2f2022%2fexecutivo+secao+ii%2fsetembro%2f17%2fpag_0038_40216fc28fbc65eb50010603475e29e3.pdf&pagina=38&data=17/09/2022&caderno=ExecutivoII&paginaordenacao=100038']]]
 
 app.get("/pdf_inf", (req, resp) => {
       resp.send(dados);
