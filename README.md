@@ -160,7 +160,7 @@
 
 * Caso o usuário cadastre um novo funcionario, após o cadastro será necessário:
 
-* Ir na pasta 📂 `server`, abrir o cmd e dar ctrl + C, para derrubar o serividor;
+* Ir na pasta 📂 `server`, abrir o cmd e dar ctrl + C, para derrubar o servidor;
 
 * Em seguida, digite: node index.js para ver o resultado da consulta do Diário ;
   
