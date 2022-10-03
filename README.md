@@ -4,10 +4,8 @@
 
 <p align="center">
     <a href="#sobre">Sobre</a> | 
+    <a href="#entrega">Entregas de Sprints</a> |
     <a href="#backlog">Backlogs</a> | 
-    <a href="#userstories">User Story</a> | 
-    <a href="#burndown">Burndown</a> |
-    <a href="#mockup">Mockup</a> |
     <a href="#pastas">Configuração das pastas</a> | 
     <a href="#manual">Manual de usuário</a> |
     <a href="#equipe">Equipe</a>
@@ -25,74 +23,47 @@
 
 <br>
 
- <span id="backlog">  
+<span id="entrega">
+ 
+## 🏁 Entregas de Sprints
+Cada uma realizada através de tag neste repositório, além da criação de branches com relatório de o que foi desenvolvido em cada sprint contendo o DOR e DOD.
+| Sprint |  Previsão  |      Status     | Histórico |
+|:------:|:----------:|:---------------:|:---------:|
+|   01   | 18/09/2022 | Finalizado ✔️   | [Ver relatório](https://github.com/All-Tech-DSM/API-2/tree/Sprint-1) |
+|   02   | 09/10/2022 | Em andamento 🚧 | Ver relatório |
+|   03   | 06/11/2022 | Não Iniciado 🛑 | Ver relatório |
+|   04   | 27/11/2022 | Não Iniciado 🛑 | Ver relatório |
 
- ## :pushpin: Backlog do Produto  
+<br>
+
+<span id="backlog">  
+
+## :pushpin: Backlog do Produto  
 
  #### Épicos (Requisitos Funcionais) 
-| SPRINT | CÓDIGO | DESCRIÇÃO                                                    | STATUS |
-|:---------:|--------|--------|:------:|
-| 1      | RF1    | Cadastro dos associados                                     |   ✅    |
-| 1      | RF2    | Raspagem de dados (leitor)                                   |   ✅    |
-| 1     | RF3 | Consultas de dados |   ✅    |
-| 1      | RF4    | Automação do download e da exclusão dos pdf's |   ✅    |
-| 2      | RF5    | Armazenamento do histórico de consultas no front-end         |   ❌    |
-| 3      | RF6    | Automação da montagem do relatório diário sobre os associados citados no Diário Oficial |   ❌    |
-| 3      | RF7    | Automação do acompanhamento de citação com prazos            |   ❌    |
-| 4      | RF8    | Automação do envio de e-mails                                |   ❌    |
+| SPRINT | CÓDIGO | DESCRIÇÃO | STATUS |
+|:------:|:------:|:----------|:------:|
+|   1    |   RF1  | Cadastro dos associados                               |   ✅    |
+|   1    |   RF2  | Raspagem de dados (leitor)                            |   ✅    |
+|   1    |   RF3  | Consultas de dados                                    |   ✅    |
+|   1    |   RF4  | Automação do download e da exclusão dos pdf's         |   ✅    |
+|   2    |   RF5  | Armazenamento do histórico de consultas no front-end  |   ❌    |
+|   3    |   RF6  | Automação da montagem do relatório diário sobre os associados citados no Diário Oficial |   ❌    |
+|   3    |   RF7  | Automação do acompanhamento de citação com prazos     |   ❌    |
+|   4    |   RF8  | Automação do envio de e-mails                         |   ❌    |
 
 #### Requisitos Não Funcionais  
 | CÓDIGO | DESCRIÇÃO | STATUS |
-|:------:|:------:|:------:|
-| RNF1 | Linguagem Node.js | ✅ |
+|:------:|:----------|:------:|
+| RNF1 | Linguagem Node.js                      | ✅ |
 | RNF2 | Programação em TypeScript e JavaScript | ✅ |
-| RNF3 | Banco de Dados Relacional (MySQL) | ✅ |
-| RNF4 | Documentações do Projeto | ✅ |
-| RNF5   |             Responsividade             |   ❌    |
+| RNF3 | Banco de Dados Relacional (MySQL)      | ✅ |
+| RNF4 | Documentações do Projeto               | ✅ |
+| RNF5 | Responsividade                         | ❌ |
 
 </div>
 
 <a href="#menu">Voltar ao menu</a>
-
-<span id="userstories">  
-
- ## :dart: User Stories  
-
- <div align="center"> 
-<img src="doc/img/us.png" width="700"/>
-
-
-
-
- </div>
-
-<a href="#menu">Voltar ao menu</a>
-
-<span id="burndown"> 
-
-## :chart_with_downwards_trend: Burndown
-
- <div align="center"> 
-<img src="doc/img/burndown_s1.png" width="700"/>
-
- </div>
-
- <span id="mockup"> 
-
-## :desktop_computer: Mockup
-
-<div align="center ">
-
-#### Tela de cadastro
-<img src="doc/img/mockup_cadastro.png" width="700"/>
-    
-
-#### Tela de consulta
-<img src="doc/img/mockup_consulta.png" width="700"/>
-
-</div>
-<a href="#menu">Voltar ao menu</a>
-
 
 <span id="pastas">
 
@@ -101,7 +72,6 @@
 * 📂 `doc`: Pasta com Documentação do Banco de Dados e fotos;
 * 📂 `server`: Pasta com os códigos bara conexão com o banco e consulta do diário oficial;
 * 📂 `PDF`: Pata onde são armazenados os PDFs baixados;
-  
 
 <br>
 
