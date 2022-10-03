@@ -1,3 +1,4 @@
+drop database cadastro;
 create database cadastro;
 use cadastro;
 
@@ -29,3 +30,6 @@ foreign key(fun_cod) REFERENCES funcionario (fun_cod),
 esc_cod int not null,
 foreign key(esc_cod) REFERENCES escolas (esc_cod)
 );
+
+insert into funcionario (fun_cod, nome, email, cpf, nas_data, tel_fixo, tel_celular, cep, numero, rua, bairro, cidade, estado, complemento) values 
+('01','Lucineia Pereira de Paula', 'l@l.com', '11111111111111', '2004-10-01', '12992432428', '12992432428', '12235830', '111', '1', '1', 'SP', 'SP', 'casa');

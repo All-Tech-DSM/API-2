@@ -19,6 +19,7 @@ function Cadastro() {
   const [estado, setEstado] = useState('');
 
   const [formValue, setFormValue] = useState([{ escolas: "" }])
+  
 
   let handleChange = (i, e) => {
     let newFormValue = [...formValue];
@@ -36,9 +37,38 @@ function Cadastro() {
     setFormValue(newFormValue)
   }
 
+  let clearAreas = (i, e) => {
+    setNome('')
+    setEmail('')
+    setCpf('')
+    setNasc('')
+    setTel('')
+    setCel('')
+    setCep('')
+    setNum('')
+    setRua('')
+    setBairro('')
+    setCity('')
+    setEstado('')
+    setComp('')
+  }
+
+  const checkCEP = (e) => {
+    const cep = e.target.value.replace(/\D/g, '');
+    console.log(cep);
+    fetch(`https://viacep.com.br/ws/${cep}/json/`).then(res => res.json()).then(data => {
+      console.log(data);
+      // register({ name: 'address', value: data.logradouro });
+      setRua(data.logradouro);
+      setBairro(data.bairro);
+      setCity(data.localidade);
+      setEstado(data.uf);
+    }).catch((err) => console.log(err));
+  }
+
   function handleSubmit(e) {
-    e.preventDefault();
-    alert(cel)
+    e.preventDefault()
+    alert('Cadastrado!')
 
     Axios.post("http://localhost:3001/register", {
       nome: nome,
@@ -57,7 +87,10 @@ function Cadastro() {
       escolas: formValue
     }).then((res)=>{
       console.log(res)
-    })
+      clearAreas()
+      
+    })    
+
   }
 
   return (
@@ -69,7 +102,7 @@ function Cadastro() {
         <form onSubmit={handleSubmit}>
 
           <div className='dados'>
-            <input placeholder='Nome completo' maxLength="60" value={nome} onChange={(e) => setNome(e.target.value)} />
+            <input placeholder='Nome completo' maxLength="60" value={nome} onChange={(e) => setNome(e.target.value)} required/>
             <input type="email" placeholder='Email' value={email} onChange={(e) => setEmail(e.target.value)} />
           </div>
 
@@ -78,12 +111,12 @@ function Cadastro() {
             <IMaskInput mask="00/00/0000" placeholder='Data de nascimento' value={nasc} onChange={(e) => setNasc(e.target.value)} />
             <IMaskInput mask="(00) 00000-0000" placeholder='Telefone' value={tel} onChange={(e) => setTel(e.target.value)} />
             <IMaskInput mask="(00) 00000-0000" placeholder='Celular' value={cel} onChange={(e) => setCel(e.target.value)} />
-            <IMaskInput mask="00.000-000" placeholder='CEP' value={cep} onChange={(e) => setCep(e.target.value)} />
+            <IMaskInput mask="00.000-000" placeholder='CEP' value={cep} onBlur={checkCEP} onChange={(e) => setCep(e.target.value)}/>
             <input placeholder='Número' value={num} onChange={(e) => setNum(e.target.value)} />
           </div>
 
           <div className='dados'>
-            <input placeholder='Rua' value={rua} onChange={(e) => setRua(e.target.value)} />
+            <input placeholder='Logradouro' value={rua} onChange={(e) => setRua(e.target.value)} />
             <input placeholder='Bairro' value={bairro} onChange={(e) => setBairro(e.target.value)} />
             <input placeholder='Complemento' value={comp} onChange={(e) => setComp(e.target.value)} />
             <input placeholder='Cidade' value={city} onChange={(e) => setCity(e.target.value)} />

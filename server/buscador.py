@@ -4,7 +4,7 @@ from coletor import coletor
 import requests
 import os
 def func():
-    con = MySQLdb.connect( user="root", password="fatec", db="cadastro")
+    con = MySQLdb.connect( user="root", password="admin", db="cadastro")
     cur = con.cursor()
     cur.execute('SELECT nome, email FROM funcionario ORDER BY nome;')
     feedback=cur.fetchall()
@@ -14,11 +14,11 @@ def func():
         buffer.append('"'+feedback[i][0].lower()+'"')
         buffer.append(feedback[i][1])
         nomes.append(buffer)
-    data = str(date.today())
-    datatext = date.today()
+    data = '2022-09-17'#str(date.today())
+    datatext = '17/09/2022' #date.today()
     data1 = data.replace('-', '')
     data2 = data.replace('-', '.')
-    data3 = datatext.strftime( '%d/%m/%Y' )
+    data3 = datatext #.strftime( '%d/%m/%Y' )
     data3parte2 = data3.replace('/', '.')
     data4 = data.replace('/', '%2f')
 
