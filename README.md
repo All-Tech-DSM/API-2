@@ -47,10 +47,11 @@ Cada uma realizada através de tag neste repositório, além da criação de bra
 |   1    |   RF2  | Raspagem de dados (leitor)                            |   ✅    |
 |   1    |   RF3  | Consultas de dados                                    |   ✅    |
 |   1    |   RF4  | Automação do download e da exclusão dos pdf's         |   ✅    |
-|   2    |   RF5  | Armazenamento do histórico de consultas no front-end  |   ❌    |
+|   2    |   RF5  | Raspagem de trechos da página                         |   ❌    |
 |   3    |   RF6  | Automação da montagem do relatório diário sobre os associados citados no Diário Oficial |   ❌    |
 |   3    |   RF7  | Automação do acompanhamento de citação com prazos     |   ❌    |
-|   4    |   RF8  | Automação do envio de e-mails                         |   ❌    |
+|   4    |   RF8  | Armazenamento do histórico de consultas no front-end  |   ❌    |
+|   4    |   RF9  | Automação do envio de e-mails                         |   ❌    |
 
 #### Requisitos Não Funcionais  
 | CÓDIGO | DESCRIÇÃO | STATUS |
