@@ -16,4 +16,5 @@ def leitor(nome):
             for paragrafo in texto.replace('"',"'").split('\n'):
                     if nome.upper() in paragrafo.upper():
                         trecho = trecho + paragrafo
+        pdf.close()
     return trecho
