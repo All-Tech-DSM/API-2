@@ -7,20 +7,21 @@ import os
 import shutil
 from PyPDF2 import PdfFileReader, PdfFileMerger
 def busca():
-    con = MySQLdb.connect( user="root", password="fatec", db="cadastro")
+    con = MySQLdb.connect( user="root", password="franca", db="cadastro")
     cur = con.cursor()
-    cur.execute('SELECT nome, email FROM funcionario ORDER BY nome;')
+    cur.execute('SELECT nome, fun_cod, email FROM funcionario ORDER BY nome;')
     feedback=cur.fetchall()
     nomes = []
     for i in range(len(feedback)):
         buffer = []
         buffer.append('"'+feedback[i][0].lower()+'"')
         buffer.append(feedback[i][1])
+        buffer.append(feedback[i][2])
         nomes.append(buffer)
-    data = '2022-09-17' #str(date.today())
-    datatext = '17/09/2022' #date.today()
+    data = str(date.today())
+    datatext = date.today()
     data1 = data.replace('-', '')
-    data3 = datatext #.strftime( '%d/%m/%Y' )
+    data3 = datatext.strftime( '%d/%m/%Y' )
     data3parte2 = data3.replace('/', '.')
     data4 = data.replace('/', '%2f')
 
@@ -34,24 +35,24 @@ def busca():
         pessoa = []
         pessoa.append(nomes[n][0])
         pessoa.append(nomes[n][1])
+        pessoa.append(nomes[n][2])
         pessoa.append(coletor(url))
         res.append(pessoa)
 
     filtro = res
     res = []
     for i in filtro:
-        if i[2] != [] :
+        if i[-1] != [] :
             i[0] = i[0].replace('"', '')
             res.append(i)
 
 
     dir = (os.getcwd().strip('server')) + 'PDF' 
     for f in os.listdir(dir):
-        print(f)
         shutil.rmtree(os.path.join(dir, f))
     for p in res:
         pdf_n = 1
-        for l in p[2]:
+        for l in p[-1]:
             # if len(lit) <3:
             #     break
             r = requests.get(l, stream = True)
@@ -71,9 +72,12 @@ def busca():
         for a in pdf_files2:
             os.remove(dir2+'/'+a)
         merger.write(os.path.join(dir2, "merger.pdf"))
-
-    for n in res:
-        leitor(n[0])
+    trechos = []
+    # for n in res:
+    #     trechos.append(leitor(n[0]))
+    # return trechos
+    for i in res:
+        i.pop()
     return res
 
 busca()
