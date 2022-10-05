@@ -6,14 +6,15 @@ import Axios from "axios";
 import { Link } from "react-router-dom";
 
 function Consulta() {
-  const [listGames, setListGames] = useState([]);
+  const [list, setList] = useState([]);
 
   useEffect(() => {
     Axios.get(`http://localhost:3001/pdf_inf`).then((resp) => {
-      setListGames(resp.data);
-      console.log(resp.data)
+      setList(resp.data);
     });
   }, [])
+
+  const listGames = [['Carlinho','1'],['Betina','2']]
 
 
   return (
@@ -24,7 +25,6 @@ function Consulta() {
           <thead>
             <tr>
               <th scope="col">Nome</th>
-              <th scope="col">Email</th>
               <th scope="col">Consulta</th>
             </tr>
           </thead>
@@ -33,20 +33,13 @@ function Consulta() {
             {typeof listGames !== 'undefined' && listGames.map((value) => {
               return !value.envio ?
                 <tr>
-                  <td data-label="Nome">{value[0]}</td>
-                  <td data-label="Email">{value[1]}</td>
-
-
-                  <td data-label="Consulta">
-                    {value[2].map((link) =>
-                      <a className='botao' href={link} target="_blank">
-                        <Link to='/dados'>
-                          <FiArrowRight size={25} />
-                        </Link>
-                      </a>
-                    )}
+                  <td data-label="Nome">
+                    {value[0]}
                   </td>
 
+                  <td data-label="Consulta">
+                    <Link to={'/dados/'+value[1]}>Ver mais...</Link>
+                  </td>
                 </tr>
                 : null
             })}

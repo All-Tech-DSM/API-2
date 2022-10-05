@@ -1,17 +1,25 @@
 import './style.css';
 import React from "react";
+import { useParams } from 'react-router-dom';
 
 function Dados() {
- 
-  const data = new Date();
-  const dia = data.getDate();
-  const mes = data.getMonth();
-  const ano = data.getFullYear();
+
+  var { id } = useParams();
+  var dados = [['1','Carlinho','','trancar matricula','carlinho@gmail'],['2','Betnha','','trancar matricula agora','betinha@gmail']]
+  var dado = ''
+  for(var k=0; dados.length>k; ++k){
+    if(dados[k][0] == id){
+      dado = dados[k]
+      break
+    }
+  }
+
 
   return (
     <div>
-      <p id='dadodia'>Dado - {dia}/{mes}/{ano} <br/>
-      (Colocar nome da pessoa) </p>
+      <p id='dadodia'>
+      Nome: {dado[1]} <br/>
+       Email: {dado[4]}</p>
 
       <div className='split'>
         <div className='pdf'>
@@ -19,20 +27,7 @@ function Dados() {
         </div>
 
         <div className='text'>
-          <textarea type='text'>Trecho Trecho Trecho Trecho Trecho Trecho 
-          Trecho Trecho Trecho Trecho Trecho Trecho Trecho Trecho Trecho 
-          Trecho Trecho Trecho Trecho Trecho Trecho Trecho Trecho Trecho 
-          Trecho Trecho Trecho Trecho Trecho Trecho Trecho Trecho Trecho 
-          Trecho Trecho Trecho Trecho Trecho Trecho Trecho Trecho Trecho 
-          Trecho Trecho Trecho Trecho Trecho Trecho Trecho Trecho Trecho 
-          Trecho Trecho Trecho Trecho Trecho Trecho Trecho Trecho Trecho 
-          Trecho Trecho Trecho Trecho Trecho Trecho Trecho Trecho Trecho 
-          Trecho Trecho Trecho Trecho Trecho Trecho Trecho Trecho Trecho 
-          Trecho Trecho Trecho Trecho Trecho Trecho Trecho Trecho Trecho 
-          Trecho Trecho Trecho Trecho Trecho Trecho Trecho Trecho Trecho 
-          Trecho Trecho Trecho Trecho Trecho Trecho Trecho Trecho Trecho 
-          Trecho Trecho Trecho Trecho Trecho Trecho Trecho Trecho Trecho 
-          Trecho Trecho Trecho Trecho Trecho Trecho Trecho Trecho Trecho</textarea>
+          <p type='text'>{dado[3]}</p>
         </div>
       </div>
     </div>
