@@ -7,7 +7,7 @@ import os
 import shutil
 from PyPDF2 import PdfFileReader, PdfFileMerger
 def busca():
-    con = MySQLdb.connect( user="root", password="franca", db="cadastro")
+    con = MySQLdb.connect( user="root", password="fatec", db="cadastro")
     cur = con.cursor()
     cur.execute('SELECT nome, fun_cod, email FROM funcionario ORDER BY nome;')
     feedback=cur.fetchall()
