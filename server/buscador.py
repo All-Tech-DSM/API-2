@@ -1,6 +1,7 @@
 import MySQLdb
 from datetime import date
 from coletor import coletor
+from leitor import leitor
 import requests
 import os
 import shutil
@@ -46,6 +47,7 @@ def busca():
 
     dir = (os.getcwd().strip('server')) + 'PDF' 
     for f in os.listdir(dir):
+        print(f)
         shutil.rmtree(os.path.join(dir, f))
     for p in res:
         pdf_n = 1
@@ -69,6 +71,9 @@ def busca():
         for a in pdf_files2:
             os.remove(dir2+'/'+a)
         merger.write(os.path.join(dir2, "merger.pdf"))
+
+    for n in res:
+        leitor(n[0])
     return res
 
 busca()
