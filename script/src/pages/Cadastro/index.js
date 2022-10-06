@@ -2,6 +2,7 @@ import './style.css';
 import { IMaskInput } from "react-imask";
 import React, { useState } from "react";
 import Axios from "axios";
+import { toast } from 'react-toastify';
 
 function Cadastro() {
   const [nome, setNome] = useState('');
@@ -68,7 +69,7 @@ function Cadastro() {
 
   function handleSubmit(e) {
     e.preventDefault()
-    alert('Cadastrado!')
+    toast.success('Cadastrado feito com sucesso!');
 
     Axios.post("http://localhost:3001/register", {
       nome: nome,
