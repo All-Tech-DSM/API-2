@@ -1,6 +1,5 @@
 //import Modal from '../../components/Modal'
 import './style.css';
-import { FiArrowRight } from "react-icons/fi";
 import React, { useState, useEffect } from "react";
 import Axios from "axios";
 import { Link } from "react-router-dom";
@@ -13,8 +12,6 @@ function Consulta() {
       setList(resp.data);
     });
   }, [])
-
-  const listGames = [['Carlinho','1'],['Betina','2']]
 
 
   return (
@@ -30,7 +27,7 @@ function Consulta() {
           </thead>
 
           <tbody>
-            {typeof listGames !== 'undefined' && listGames.map((value) => {
+            {typeof list !== 'undefined' && list.map((value) => {
               return !value.envio ?
                 <tr>
                   <td data-label="Nome">

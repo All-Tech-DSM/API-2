@@ -4,13 +4,11 @@ import json
 from buscador import busca
 from leitor import leitor
    
-# Setup flask server
 app = Flask(__name__) 
   
-# Setup url route which will calculate
-# total sum of array.
 @app.route('/associados', methods = ['POST']) 
 def associados(): 
+    print('associados')
     data = request.get_json() 
     ls = data['array'] 
     result = busca()
@@ -19,6 +17,7 @@ def associados():
 @app.route('/trechos', methods = ['POST'])
 # #[[nome, id]]
 def trechos():
+    print('trechos')
     data = request.get_json()
     nome = data['array']
     result = []

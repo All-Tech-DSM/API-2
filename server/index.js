@@ -70,79 +70,74 @@ app.post("/register", (req, res) => {
   insert_esc(escolas,cpf)
 });
 
-var dados = []
-exec('python buscador.py', (erro, str) => {
-  if (erro) {
-      console.error("erro: ", erro)
-      return 
-  }
 
-  let str_a = str.split("'*',")
-  function listinha(str){
-  if(str[-1] = ' '){var ind_f = -3}else{var ind_f = -2}
-  str = str.slice(2, ind_f)
-  lista = str.split(',')
-  listaf = Array()
-  for(let i in lista) {
-      lista[i] = lista[i].replace(' ', '')
-      lista[i] = lista[i].replace("'", '')
-      lista[i] = lista[i].replace('[', '')
-      lista[i] = lista[i].replace(']', '')
-      lista[i] = lista[i].replace("'", '')
-      listaf.push(lista[i])
-  }
-  return listaf
-  }
-  var lista_a = Array()
-  for(var i in str_a){
-      lista_a.push(listinha(str_a[i]))
-      
-  }
-  var lista_final = Array()
-  for(var k = 1; lista_a.length >= k; ++k){
-      var lista_p = new Array()
-      var listinha = lista_a[k-1]
-      for(var sla_y = 1; listinha.length >=sla_y; ++sla_y){
-          lista_p.push(listinha[sla_y-1])
-          
-      }
-      lista_final.push(lista_p)
-  }
-  var lista_filtro = new Array()
-  for(var k = 1; lista_final.length >= k; ++k){
-    if(lista_final[k-1].length > 1){
-      lista_filtro.push(lista_final[k-1])
+var request = require('request-promise');
+var a = new Array();
+async function associados() {
+    var data = {
+        array: 1
     }
-  }
+    var options = {
+        method: 'POST',
+        uri: 'http://127.0.0.1:5000/associados',
+        body: data,
+        json: true
+    };
+    var sendrequest = await request(options)
+        .then(function (parsedBody) {
+            result = parsedBody['result'];
+            //console.log(result)
+            return result
+        })
+        .catch(function (err) {
+            console.log(err);
+        });
+        //console.log(r)
+    return sendrequest
+}
 
-  var lista_vdd = new Array()
-  for(var k = 0; (lista_filtro.length-1)>= k; ++k ){
-      //console.log(x[k])
-      var lista_peq_vdd = new Array()
-      var lista_peq = lista_filtro[k]
-      var lista_link = new Array()
-      for(var y = 2; (lista_peq.length-1) >= y; ++y){
-          //console.log(lista_peq[y])
-          lista_link.push(lista_peq[y])
-      }
-      //console.log(lista_link)
-      for(var e = 0; (lista_peq.length-1) >= e; ++e){
-          lista_peq_vdd.push(lista_peq[e])
-          if(e == 1){
-              break
-          }
-      }
-      lista_peq_vdd.push(lista_link)
-    lista_vdd.push(lista_peq_vdd)
-  }
-  console.log(lista_vdd)
+async function trechos(nomes) {
+    var data = {
+        array: nomes
+    }
+    var options = {
+        method: 'POST',
+        uri: 'http://127.0.0.1:5000/trechos',
+        body: data,
+        json: true
+    };
+    var sendrequest = await request(options)
+        .then(function (parsedBody) {
+            result = parsedBody['result'];
+            //console.log(result)
+            return result
+        })
+        .catch(function (err) {
+            console.log(err);
+        });
+        //console.log(r)
+    return sendrequest
+}
 
-  dados = lista_vdd
-})
 
 
 app.get("/pdf_inf", (req, resp) => {
-      resp.send(dados);
+  async function main() {
+    var x = await associados()
+    resp.send(x);
+    }
+  main()
+    
+});
+
+app.get("/pdf_ind", (req, resp) => {
+  async function main() {
+    var x = await associados()
+    var y = await trechos(x)
+    resp.send(y);
+    }
+  main()
+
 });
 
 
