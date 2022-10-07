@@ -8,7 +8,7 @@ function Consulta() {
   const [list, setList] = useState([]);
 
   useEffect(() => {
-    Axios.get(`http://localhost:3001/pdf_inf`).then((resp) => {
+    Axios.get(`http://127.0.0.1:3001/pdf_inf`).then((resp) => {
       setList(resp.data);
     });
   }, [])
