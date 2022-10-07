@@ -7,7 +7,7 @@ import Axios from "axios";
 function Dados() {
   var {id}=useParams();
   //console.log(id)
-  const [list, setList] = useState([]);
+  const [listo, setList] = useState([]);
 
   useEffect(() => {
     Axios.get(`http://localhost:3001/pdf_inf`).then((resp) => {
@@ -16,39 +16,27 @@ function Dados() {
     });
   }, [])
   console.log('repeticao')
-  // const [dado,setDado]=useState([]);
-  // for(var k = 0; list.length > k; ++k){
-  //   if(list[k][1] == id){
-  //     setDado(list[k])
-  //     console.log(list[k])
-  //     break
-  //   } 
-  // }
-  // if(list.length >= 1){
-  //   console.log('oi')
-  // }
+  const [dado,setDado]=useState([]);
+  console.log(dado.length)
+  if(dado.length == 0){
+    for(var k = 0; listo.length > k; ++k){
+      if(listo[k][1] == id){
+        setDado(listo[k])
+        break
+      } 
+    }
+  }
+  
+
 
 
 
 return (
   <div>
-    <p id='dadodia'>Dado(s) do dia</p>
-    <div className='container-table'>
-      <table>
-        <thead>
-          <tr>
-            <th scope="col">Nome</th>
-            <th scope="col">Consulta</th>
-          </tr>
-        </thead>
-
-        <tbody>
-          {typeof list !== 'undefined' && list.map((value) => {
-            return !value.envio ?
             <div>
                    <p id='dadodia'>
-                     Nome: {value[0]} <br/>
-                     Email: 
+                     Nome: {dado[0]} <br/>
+                     Email: {dado[2]}
                    </p>
             
                     <div className='split'>
@@ -57,15 +45,10 @@ return (
                        </div>
             
                        <div className='text'>
-                         <p type='text'></p>
+                         <p type='text'>{dado[-1]}</p>
                        </div>
                     </div>
                  </div>
-              : null
-          })}
-        </tbody>
-      </table>
-    </div>
   </div>
 );
         }
