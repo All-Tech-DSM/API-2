@@ -130,15 +130,15 @@ app.get("/pdf_inf", (req, resp) => {
     
 });
 
-app.get("/pdf_ind", (req, resp) => {
-  async function main() {
-    var x = await associados()
-    var y = await trechos(x)
-    resp.send(y);
-    }
-  main()
+// app.get("/pdf_ind", (req, resp) => {
+//   async function main() {
+//     var x = await associados()
+//     var y = await trechos(x)
+//     resp.send(y);
+//     }
+//   main()
 
-});
+// });
 
 
 app.listen(3001, () => {
