@@ -4,7 +4,7 @@ import { useParams } from 'react-router-dom'
 import React, { useState, useEffect } from "react";
 import Axios from "axios";
 
-import PDF from "../../pasda_doc_teste/PDF/rodrigo_garcia/merger.pdf"
+import PDF from "../../PDF/rodrigo_garcia/merger.pdf"
 function Dados() {
   var { id } = useParams();
   const [listo, setList] = useState([]);
