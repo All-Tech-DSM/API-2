@@ -7,7 +7,7 @@ import os
 import shutil
 from PyPDF2 import PdfFileReader, PdfFileMerger
 def busca():
-    con = MySQLdb.connect( user="root", password="franca", db="cadastro")
+    con = MySQLdb.connect( user="root", password="fatec", db="cadastro")
     cur = con.cursor()
     cur.execute('SELECT nome, fun_cod, email FROM funcionario ORDER BY nome;')
     feedback=cur.fetchall()
@@ -47,7 +47,7 @@ def busca():
             res.append(i)
 
 
-    dir = (os.getcwd().strip('server')) + 'PDF' 
+    dir = (os.getcwd().strip('server')) + 'script/src/PDF' 
     for f in os.listdir(dir):
         shutil.rmtree(os.path.join(dir, f))
     for p in res:
@@ -64,7 +64,7 @@ def busca():
     pdf_files = [f for f in os.listdir(dir)]
     merger = PdfFileMerger()
     for i in pdf_files:
-        dir2 = (os.getcwd().strip('server')) + 'PDF/' + f'{i}'
+        dir2 = (os.getcwd().strip('server')) + 'script/src/PDF/' + f'{i}'
         pdf_files2 = [f for f in os.listdir(dir2)]
         merger = PdfFileMerger()
         for n in pdf_files2:
