@@ -30,7 +30,7 @@ Cada uma realizada através de tag neste repositório, além da criação de bra
 | Sprint |  Previsão  |      Status     | Histórico |
 |:------:|:----------:|:---------------:|:---------:|
 |   01   | 18/09/2022 | Finalizado ✔️   | [Ver relatório](https://github.com/All-Tech-DSM/API-2/tree/Sprint-1) |
-|   02   | 09/10/2022 | Em andamento 🚧 | Ver relatório |
+|   02   | 09/10/2022 | Finalizado ✔️   | [Ver relatório](https://github.com/All-Tech-DSM/API-2/tree/Sprint-2) |
 |   03   | 06/11/2022 | Não Iniciado 🛑 | Ver relatório |
 |   04   | 27/11/2022 | Não Iniciado 🛑 | Ver relatório |
 
@@ -47,7 +47,7 @@ Cada uma realizada através de tag neste repositório, além da criação de bra
 |   1    |   RF2  | Raspagem de dados (leitor)                            |   ✅    |
 |   1    |   RF3  | Consultas de dados                                    |   ✅    |
 |   1    |   RF4  | Automação do download e da exclusão dos pdf's         |   ✅    |
-|   2    |   RF5  | Raspagem de trechos da página                         |   ❌    |
+|   2    |   RF5  | Raspagem de trechos da página                         |   ✅    |
 |   3    |   RF6  | Automação da montagem do relatório diário sobre os associados citados no Diário Oficial |   ❌    |
 |   3    |   RF7  | Automação do acompanhamento de citação com prazos     |   ❌    |
 |   4    |   RF8  | Armazenamento do histórico de consultas no front-end  |   ❌    |
@@ -91,9 +91,7 @@ Cada uma realizada através de tag neste repositório, além da criação de bra
 
 * Feche o cmd;
 
-* Abra o MySQL e execute o arquivo `script.sql` (Nessa sprint é necessario inserir os dados do primeiro associado antes de executar o script);
-
-  <img src="doc/img/tutorial_banco.jpeg" width="700"/>
+* Abra o MySQL e execute o arquivo `script.sql` 
 
 * Vá à pasta 📂 `API-2`;
 
@@ -117,26 +115,22 @@ Cada uma realizada através de tag neste repositório, além da criação de bra
 
 * Após a instalação, digite: node index.js;
 
+* Crie outro terminal e entre na pasta 📂 `server`:
+
+* Digite: python app.py;
+
 * Abra um novo terminal e volte para 📂 `API-2`;
 
-* Em seguida vá à pasta 📂 `script`;
+* Em seguida vá à pasta 📂 `script`, abra o cmd;
 
-* Abra o cmd ;
+* Digite: npm install;
 
-* Digite: npm install 
-
-* Em seguida, digite: npm start
+* Em seguida, digite: npm start;
 
 * A página já estará estanciada em sua localhost.
-
-* Caso o usuário cadastre um novo funcionario, após o cadastro será necessário:
-
-* Ir na pasta 📂 `server`, abrir o cmd e dar ctrl + C, para derrubar o servidor;
-
-* Em seguida, digite: node index.js para ver o resultado da consulta do Diário ;
   
 
-<a href="#menu">--> voltar ao menu</a>
+<a href="#menu">Voltar ao menu</a>
     
 
 <span id="equipe"> 
