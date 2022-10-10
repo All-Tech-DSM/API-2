@@ -1,17 +1,17 @@
-#dadodia {
+#dadodia{
     font-size: 1.5em;
     text-align: center;
     margin: 2% 0%;
 }
 
-.split {
+.split{
     display: flex;
     flex-direction: row;
     align-items: center;
     justify-content: space-evenly;
 }
 
-textarea {
+textarea{
     height: 70vh;
     width: 22vw;
     resize: none;
@@ -20,9 +20,4 @@ textarea {
     border-radius: 5px;
     padding: 15px;
     font-size: 1em;
-}
-
-.pdf {
-    width: 40%;
-    height: 700px;
 }
