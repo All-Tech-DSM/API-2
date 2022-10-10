@@ -15,6 +15,8 @@ def leitor(nome):
                 texto = pagina.extractText()
                 for paragrafo in texto.replace('"',"'").split('\n'):
                         if nome.upper() in paragrafo.upper():
-                            trecho = trecho + paragrafo
-                            
+                            if trecho != "":
+                                trecho = trecho + paragrafo + "----------------------------------------------------------------------------------------------"
+                            else:
+                                trecho = trecho + paragrafo
     return trecho.lower()

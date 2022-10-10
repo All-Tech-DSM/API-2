@@ -37,9 +37,6 @@ return (
       </p>
 
       <div className='split'>
-          <div className='pdf'>
-            <div>pdf file will render here</div>
-          </div>
 
           <div className='text'>
             <p type='text'>{dado[3]}</p>

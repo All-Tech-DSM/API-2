@@ -7,7 +7,7 @@ import os
 import shutil
 from PyPDF2 import PdfFileReader, PdfFileMerger
 def busca():
-    con = MySQLdb.connect( user="root", password="franca", db="cadastro")
+    con = MySQLdb.connect( user="root", password="admin", db="cadastro")
     cur = con.cursor()
     cur.execute('SELECT nome, fun_cod, email FROM funcionario ORDER BY nome;')
     feedback=cur.fetchall()
@@ -18,10 +18,10 @@ def busca():
         buffer.append(feedback[i][1])
         buffer.append(feedback[i][2])
         nomes.append(buffer)
-    data = str(date.today())
-    datatext = date.today()
+    data = "2022-09-17"#str(date.today())
+    datatext = "17/09/2022"#date.today()
     data1 = data.replace('-', '')
-    data3 = datatext.strftime( '%d/%m/%Y' )
+    data3 = datatext #.strftime( '%d/%m/%Y' )
     data3parte2 = data3.replace('/', '.')
     data4 = data.replace('/', '%2f')
 
