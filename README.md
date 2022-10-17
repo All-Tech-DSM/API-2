@@ -21,9 +21,7 @@
 ## :dart: User Story 
 
 <div align="center"> 
-<img src="img/us_sprint11.png" width="700"/>
-<img src="img/us_sprint12.png" width="700"/>
-<img src="img/us_sprint13.png" width="700"/>
+<img src="img/us_sprint1_geral.png" width="700"/>
 </div>
 <br>
 
@@ -53,7 +51,7 @@ Como parte do planejamento do projeto foram criado os mockup's para idealizaçã
 <img src="img/mockup_cadastro.png" width="700"/>
 
 ### Tela de Consulta
-<img src="img/mockup_consulta.png" width="700"/>
+<img src="img/mockup_consulta2.png" width="700"/>
 </div>
 
 <a href="#menu"> -> Voltar ao menu</a>
@@ -63,7 +61,7 @@ Como parte do planejamento do projeto foram criado os mockup's para idealizaçã
 ## :film_strip: Execução
 
 <div align="center ">
-gif aqui
+<img src="img/s1.gif" width="700"/>
 </div>
 
 <span id="modelo"> 
