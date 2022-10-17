@@ -14,7 +14,7 @@
 
 <br>
 
-<h4 align="center"> Durante essa segunda sprint o foco foi a raspagem de trechos e o desenvolvimento de melhorias e correções para o projeto. </h4>
+<h4 align="center"> Os objetivos para a primeira sprint foram o cadastro dos associados e a mostragem de dados feita através da raspagem.  </h4>
 
 <span id="userstory">  
 
@@ -30,21 +30,29 @@
 O User Story faz referência aos requisitos: RF2 RF3 RNF1 RNF2 RNF3. 
 Confira abaixo a descrição de cada um.
 
+* RF1: Cadastro dos associados
 * RF2: Raspagem de dados (leitor)
 * RF3: Consultas de dados
+* RF4: Automação do download e da exclusão dos pdf's
 * RNF1	Linguagem Node.js
 * RNF2	Programação em TypeScript e JavaScript
 * RNF3	Banco de Dados Relacional (MySQL)
+
+<a href="#menu"> -> Voltar ao menu</a>
 
 <span id="mockup"> 
 
 ## :desktop_computer: Mockup
 
-Como parte do planejamento do projeto foram criado os mockup para idealização do layout e validado pelo cliente para assim ser aplicado na interface.
+Como parte do planejamento do projeto foram criado os mockup's para idealização do layout e validado pelo cliente para assim ser aplicado na interface.
 
 <br>
 <div align="center ">
+
+### Tela de Cadastro
 <img src="img/mockup_cadastro.png" width="700"/>
+
+### Tela de Consulta
 <img src="img/mockup_consulta.png" width="700"/>
 </div>
 
@@ -63,12 +71,15 @@ gif aqui
 ## :film_strip: Modelos de Banco de Dados
 
 <div align="center ">
+
 ### Modelo Conceitual
 <img src="img/conceitual.png" width="700"/>
 
 ### Modelo Lógico
 <img src="img/logico.png" width="700"/>
 </div>
+
+<a href="#menu"> -> Voltar ao menu</a>
 
 <span id="burndown">
 
@@ -80,7 +91,6 @@ Para acompanhar as atividades, foi criado e atualizado pelo Scrum Master, um gr�
 <div align="center"> 
 <img src="img/burndown_s1.png" width="700"/>
 </div>
-<a href="#menu"> -> Voltar ao menu</a>
 <br>
 
 <span id="manual">
