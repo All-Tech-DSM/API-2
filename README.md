@@ -1,85 +1,91 @@
 <div align="center" id="menu">
-<img src="doc/img/logo_transparent.png"/></div>
+<img src="img/logo_transparent.png"/></div>
 <h3 align="center"> Desenvolvimento de Aplicação Web Simples, FrontEnd Básico, com Persistência em BD Relacional </h3>
 
-<p align="center">
-    <a href="#sobre">Sobre</a> | 
-    <a href="#entrega">Entregas de Sprints</a> |
-    <a href="#backlog">Backlogs</a> | 
-    <a href="#pastas">Configuração das pastas</a> | 
-    <a href="#manual">Manual de usuário</a> |
-    <a href="#equipe">Equipe</a>
+<p align="center"> 
+    <a href="#userstory">User Story</a> | 
+    <a href="#mockup">Mockup</a> |
+    <a href="#exe">Execução</a> |
+    <a href="#modelo">Modelos</a> |
+    <a href="#burndown">Burndown</a> |
+    <a href="#manual">Manual</a>
+
 </p>
 
 <br>
 
-<span id="sobre">
+<h4 align="center"> Durante essa segunda sprint o foco foi a raspagem de trechos e o desenvolvimento de melhorias e correções para o projeto. </h4>
 
-## :pencil: Sobre o projeto
- O projeto tem como objetivo criar um robô automatizado que faz a leitura, identifica e busca o conteúdo do Diário Oficial do Estado de SP relacionado aos Professores Associados, emitindo o relatório diário.
-    
+<span id="userstory">  
 
-> :gear: **Tecnologias Utilizadas:** [ReactJs](https://pt-br.reactjs.org/), [JavaScript](https://developer.mozilla.org/pt-BR/docs/Web/JavaScript), [TypeScript](https://www.typescriptlang.org/), [Node](https://nodejs.org/en/about/), [Python](https://www.python.org/), [HTML](https://developer.mozilla.org/pt-BR/docs/Web/HTML), [CSS](https://developer.mozilla.org/pt-BR/docs/Web/CSS), [Figma](http://www.figma.com), [Visual Studio Code](https://code.visualstudio.com/), [Discord](https://discord.com/), [GitHub](https://github.com/), [Excel](https://www.microsoft.com/pt-br/microsoft-365/free-office-online-for-the-web)
+## :dart: User Story 
 
+<div align="center"> 
+<img src="img/us_sprint11.png" width="700"/>
+<img src="img/us_sprint12.png" width="700"/>
+<img src="img/us_sprint13.png" width="700"/>
+</div>
 <br>
 
-<span id="entrega">
- 
-## 🏁 Entregas de Sprints
-Cada uma realizada através de tag neste repositório, além da criação de branches com relatório de o que foi desenvolvido em cada sprint contendo o DOR e DOD.
-| Sprint |  Previsão  |      Status     | Histórico |
-|:------:|:----------:|:---------------:|:---------:|
-|   01   | 18/09/2022 | Finalizado ✔️   | [Ver relatório](https://github.com/All-Tech-DSM/API-2/tree/Sprint-1) |
-|   02   | 09/10/2022 | Finalizado ✔️   | [Ver relatório](https://github.com/All-Tech-DSM/API-2/tree/Sprint-2) |
-|   03   | 06/11/2022 | Não Iniciado 🛑 | Ver relatório |
-|   04   | 27/11/2022 | Não Iniciado 🛑 | Ver relatório |
+O User Story faz referência aos requisitos: RF2 RF3 RNF1 RNF2 RNF3. 
+Confira abaixo a descrição de cada um.
+
+* RF2: Raspagem de dados (leitor)
+* RF3: Consultas de dados
+* RNF1	Linguagem Node.js
+* RNF2	Programação em TypeScript e JavaScript
+* RNF3	Banco de Dados Relacional (MySQL)
+
+<span id="mockup"> 
+
+## :desktop_computer: Mockup
+
+Como parte do planejamento do projeto foram criado os mockup para idealização do layout e validado pelo cliente para assim ser aplicado na interface.
 
 <br>
-
-<span id="backlog">  
-
-## :pushpin: Backlog do Produto  
-
- #### Épicos (Requisitos Funcionais) 
-| SPRINT | CÓDIGO | DESCRIÇÃO | STATUS |
-|:------:|:------:|:----------|:------:|
-|   1    |   RF1  | Cadastro dos associados                               |   ✅    |
-|   1    |   RF2  | Raspagem de dados (leitor)                            |   ✅    |
-|   1    |   RF3  | Consultas de dados                                    |   ✅    |
-|   1    |   RF4  | Automação do download e da exclusão dos pdf's         |   ✅    |
-|   2    |   RF5  | Raspagem de trechos da página                         |   ✅    |
-|   3    |   RF6  | Automação da montagem do relatório diário sobre os associados citados no Diário Oficial |   ❌    |
-|   3    |   RF7  | Automação do acompanhamento de citação com prazos     |   ❌    |
-|   4    |   RF8  | Armazenamento do histórico de consultas no front-end  |   ❌    |
-|   4    |   RF9  | Automação do envio de e-mails                         |   ❌    |
-
-#### Requisitos Não Funcionais  
-| CÓDIGO | DESCRIÇÃO | STATUS |
-|:------:|:----------|:------:|
-| RNF1 | Linguagem Node.js                      | ✅ |
-| RNF2 | Programação em TypeScript e JavaScript | ✅ |
-| RNF3 | Banco de Dados Relacional (MySQL)      | ✅ |
-| RNF4 | Documentações do Projeto               | ✅ |
-| RNF5 | Responsividade                         | ❌ |
-
+<div align="center ">
+<img src="img/mockup_cadastro.png" width="700"/>
+<img src="img/mockup_consulta.png" width="700"/>
 </div>
 
-<a href="#menu">Voltar ao menu</a>
+<a href="#menu"> -> Voltar ao menu</a>
 
-<span id="pastas">
+<span id="exe"> 
 
-## :file_folder: Configuração das pastas
-* 📂 `script`: Pasta com os códigos do react/front;
-* 📂 `doc`: Pasta com Documentação do Banco de Dados e fotos;
-* 📂 `server`: Pasta com os códigos bara conexão com o banco e consulta do diário oficial;
-* 📂 `PDF`: Pata onde são armazenados os PDFs baixados;
+## :film_strip: Execução
+
+<div align="center ">
+gif aqui
+</div>
+
+<span id="modelo"> 
+
+## :film_strip: Modelos de Banco de Dados
+
+<div align="center ">
+### Modelo Conceitual
+<img src="img/conceitual.png" width="700"/>
+
+### Modelo Lógico
+<img src="img/logico.png" width="700"/>
+</div>
+
+<span id="burndown">
+
+## :chart_with_downwards_trend: Burndown
+
+Para acompanhar as atividades, foi criado e atualizado pelo Scrum Master, um gráfico de burndown onde podemos visualizar de forma tangivel os esforços de tempo e a progressão ao longo dos dias da sprint.
 
 <br>
-
+<div align="center"> 
+<img src="img/burndown_s1.png" width="700"/>
+</div>
+<a href="#menu"> -> Voltar ao menu</a>
+<br>
 
 <span id="manual">
 
- ## :scroll: Manual de usuário
+ ## :scroll: Manual - Como Rodar
 
 * É necessário ter o Node.js, MySQL, Python(versão 3.10),  Visual Studio Code e o Git instalado na máquina.
 
@@ -101,23 +107,15 @@ Cada uma realizada através de tag neste repositório, além da criação de bra
 
 * Vá na linha 06 e configure a rota de seu MySQL;
 
-  <img src="doc/img/banco_index_tutorial.jpeg" width="700"/>
-
 * Em seguida salve o arquivo e feche-o;
 
 * Abre o arquivo “buscador.py” e configure os dados do MySQL na linha 7;
-
-  <img src="doc/img/banco_tutorial_buscador.jpeg" width="700"/>
 
 * Ainda na pasta 📂 `server` abra o cmd e digite: npm install;
 
 * Em seguida, digite o comando pip install -r req.txt;
 
 * Após a instalação, digite: node index.js;
-
-* Crie outro terminal e entre na pasta 📂 `server`:
-
-* Digite: python app.py;
 
 * Abra um novo terminal e volte para 📂 `API-2`;
 
@@ -130,21 +128,4 @@ Cada uma realizada através de tag neste repositório, além da criação de bra
 * A página já estará estanciada em sua localhost.
   
 
-<a href="#menu">Voltar ao menu</a>
-    
-
-<span id="equipe"> 
-
-## :busts_in_silhouette: Equipe
-
-|    Função     |    Nome    |    LinkedIn & GitHub    |
-| :-----------: | :--------- | :---------------------: |
-| Product Owner | Bruno Henrique Menezes Ramos           |  [![Linkedin Badge](https://img.shields.io/badge/Linkedin-blue?style=flat-square&logo=Linkedin&logoColor=white)](https://www.linkedin.com/in/brunohenriquemenezesramos) [![GitHub Badge](https://img.shields.io/badge/GitHub-111217?style=flat-square&logo=github&logoColor=white)](https://github.com/BrunoHenriique)              |
-| Scrum Master  | Amanda Vieira de Oliveira              |  [![Linkedin Badge](https://img.shields.io/badge/Linkedin-blue?style=flat-square&logo=Linkedin&logoColor=white)](https://www.linkedin.com/in/amanda-vo/) [![GitHub Badge](https://img.shields.io/badge/GitHub-111217?style=flat-square&logo=github&logoColor=white)](https://github.com/amandavo)              |
-|   Dev Team    | Andressa Ginevro de Souza              |  [![Linkedin Badge](https://img.shields.io/badge/Linkedin-blue?style=flat-square&logo=Linkedin&logoColor=white)](https://www.linkedin.com/in/andressa-ginevro-de-souza-55173b1b8/) [![GitHub Badge](https://img.shields.io/badge/GitHub-111217?style=flat-square&logo=github&logoColor=white)](https://github.com/Andressafatec)              |
-|   Dev Team    | Carlos Eduardo Falandes                |   [![Lattes Badge](https://img.shields.io/badge/-Lattes-orange?style=flat-square&logo=GitBook&logoColor=white&link=http://lattes.cnpq.br/2433599000300626)](http://lattes.cnpq.br/3579183651868833) [![GitHub Badge](https://img.shields.io/badge/GitHub-111217?style=flat-square&logo=github&logoColor=white)](https://github.com/Desduh)              |
- |   Dev Team    | Gustavo Borges Lima                   |  [![Linkedin Badge](https://img.shields.io/badge/Linkedin-blue?style=flat-square&logo=Linkedin&logoColor=white)](https://www.linkedin.com/in/NOME/) [![GitHub Badge](https://img.shields.io/badge/GitHub-111217?style=flat-square&logo=github&logoColor=white)](https://github.com/Miojoguu)              |
- |   Dev Team    | Júlia Sousa Gayotto                   |  [![Linkedin Badge](https://img.shields.io/badge/Linkedin-blue?style=flat-square&logo=Linkedin&logoColor=white)](https://www.linkedin.com/in/júlia-gayotto/) [![GitHub Badge](https://img.shields.io/badge/GitHub-111217?style=flat-square&logo=github&logoColor=white)](https://github.com/JuliaGayotto)              |
- |   Dev Team    | Lucas França Registro                 |  [![Linkedin Badge](https://img.shields.io/badge/Linkedin-blue?style=flat-square&logo=Linkedin&logoColor=white)](https://www.linkedin.com/in/NOME/) [![GitHub Badge](https://img.shields.io/badge/GitHub-111217?style=flat-square&logo=github&logoColor=white)](https://github.com/LucasFrancaRegistro)              |
-
-<a href="#menu">Voltar ao menu</a>
+<a href="#menu"> -> Voltar ao menu</a>
