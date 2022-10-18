@@ -5,7 +5,6 @@
 <p align="center"> 
     <a href="#userstory">User Story</a> | 
     <a href="#mockup">Mockup</a> |
-    <a href="#exe">Execução</a> |
     <a href="#burndown">Burndown</a> |
     <a href="#manual">Manual</a>
 
@@ -45,14 +44,6 @@ Como parte do planejamento do projeto foi criado o mockup para idealização do 
 </div>
 
 <a href="#menu"> -> Voltar ao menu</a>
-
-<span id="exe"> 
-
-## :film_strip: Execução
-
-<div align="center ">
-gif aqui
-</div>
 
 <span id="burndown">
 
