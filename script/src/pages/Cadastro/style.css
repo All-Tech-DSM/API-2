@@ -62,6 +62,8 @@ input{
     border-radius: 15px;
     border-style: hidden;
     height: 5vh;
+    display: flex;
+    justify-content: center;
 }
 
 .del{
@@ -73,6 +75,8 @@ input{
     border-style: hidden;
     background-color: #F36868;
     color: #FFF;
+    display: flex;
+    justify-content: center;
 }
 
 .add{

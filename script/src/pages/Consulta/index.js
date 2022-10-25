@@ -1,8 +1,10 @@
-//import Modal from '../../components/Modal'
 import './style.css';
 import React, { useState, useEffect } from "react";
+
+import Header from "../../components/Header";
 import Axios from "axios";
 import { Link } from "react-router-dom";
+import { FiArrowRight, FiFileText } from "react-icons/fi";
 
 function Consulta() {
   const [list, setList] = useState([]);
@@ -16,6 +18,14 @@ function Consulta() {
 
   return (
     <div>
+    <Header/>
+      {list.lenght === 0 ? (
+        <div className='none'>
+          <p>Nenhum dado encontrado...</p>
+          <p>Não há relatório diário!</p>
+        </div>
+      ) : (
+        <>
       <p id='dadodia'>Dado(s) do dia</p>
       <div className='container-table'>
         <table>
@@ -35,7 +45,7 @@ function Consulta() {
                   </td>
 
                   <td data-label="Consulta">
-                    <Link to={'/dados/'+value[1]}>Ver mais...</Link>
+                    <Link to={'/dados/'+value[1]}><FiArrowRight size={25} /></Link>
                   </td>
                 </tr>
                 : null
@@ -43,6 +53,12 @@ function Consulta() {
           </tbody>
         </table>
       </div>
+      <div className='flex-end'>
+        <button><FiFileText size={25} /><Link to='relatorio_diario'>Ver Relatório Diário</Link></button>
+      </div>
+      </>
+      )}
+      
     </div>
   );
 }

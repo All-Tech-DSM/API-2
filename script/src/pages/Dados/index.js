@@ -1,5 +1,5 @@
-//import Modal from '../../components/Modal'
 import './style.css';
+import Header from "../../components/Header";
 import { useParams } from 'react-router-dom'
 import React, { useState, useEffect } from "react";
 import Axios from "axios";
@@ -20,9 +20,9 @@ function Dados() {
     });
   }, [])
   const [dado, setDado] = useState([]);
-  if (dado.length == 0) {
+  if (dado.length === 0) {
     for (var k = 0; listo.length > k; ++k) {
-      if (listo[k][1] == id) {
+      if (listo[k][1] === id) {
         setDado(listo[k])
         break
       }
@@ -30,16 +30,20 @@ function Dados() {
   }
   console.log(dado[3])
 
+
+
+
   return (
     <div>
-      <div  id='dadodia'>
+      <Header />
+      <div id='dadodia'>
         <p>
           Nome: {dado[0]} <br />
           Email: {dado[2]}
         </p>
-      </div>
 
         <div className='split'>
+
           <div className='pdf'>
             <embed src={PDF} width="100%" height="100%" />
           </div>
@@ -48,7 +52,7 @@ function Dados() {
             <p type='text'>{dado[3]}</p>
           </div>
         </div>
-
+      </div>
     </div>
   );
 }

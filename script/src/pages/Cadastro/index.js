@@ -1,12 +1,12 @@
 import './style.css';
+import Header from "../../components/Header";
 import { IMaskInput } from "react-imask";
 import React, { useState } from "react";
 import Axios from "axios";
 import { toast } from 'react-toastify';
-import { cpf } from 'cpf-cnpj-validator'; 
+import { cpf } from 'cpf-cnpj-validator';
 
 function Cadastro() {
-
   const [nome, setNome] = useState('');
   const [email, setEmail] = useState('');
   const [cpfe, setCpf] = useState('');
@@ -105,6 +105,8 @@ function Cadastro() {
   }
 
   return (
+    <div>
+    <Header/>
     <div className="container">
 
       <div className='content'>
@@ -113,7 +115,7 @@ function Cadastro() {
         <form onSubmit={handleSubmit}>
 
           <div className='dados'>
-            <input placeholder='Nome completo' maxLength="60" value={nome} onChange={(e) => setNome(e.target.value)} required/>
+            <input placeholder='Nome completo' maxLength="60" value={nome} onChange={(e) => setNome(e.target.value)} required />
             <input type="email" placeholder='Email' value={email} onChange={(e) => setEmail(e.target.value)} />
           </div>
 
@@ -122,7 +124,7 @@ function Cadastro() {
             <IMaskInput mask="00/00/0000" placeholder='Data de nascimento' value={nasc} onChange={(e) => setNasc(e.target.value)} />
             <IMaskInput mask="(00) 00000-0000" placeholder='Telefone' value={tel} onChange={(e) => setTel(e.target.value)} />
             <IMaskInput mask="(00) 00000-0000" placeholder='Celular' value={cel} onChange={(e) => setCel(e.target.value)} />
-            <IMaskInput mask="00.000-000" placeholder='CEP' value={cep} onBlur={checkCEP} onChange={(e) => setCep(e.target.value)}/>
+            <IMaskInput mask="00.000-000" placeholder='CEP' value={cep} onBlur={checkCEP} onChange={(e) => setCep(e.target.value)} />
             <input placeholder='Número' value={num} onChange={(e) => setNum(e.target.value)} />
           </div>
 
@@ -136,7 +138,7 @@ function Cadastro() {
 
           {formValue.map((e, index) => (
             <>
-            
+
               <div className='school' key={index}>
                 <input placeholder='Escolas atuantes' name='escolas' value={e.escolas} onChange={e => handleChange(index, e)} />
                 {index ?
@@ -154,6 +156,7 @@ function Cadastro() {
 
         </form>
       </div>
+    </div>
     </div>
   );
 }

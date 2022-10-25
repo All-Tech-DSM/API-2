@@ -4,7 +4,7 @@
     align-items: center;
 }
 
-.none span {
+.none p {
     margin: 2em 0;
     font-size: 1.3em;
     color: aliceblue;
@@ -67,9 +67,29 @@ tr button{
 
 .container-table{
     padding: 1px 200px;
+    margin-bottom: 2%;
 }
-.botao{
+
+.flex-end{
     display: flex;
-    flex-direction: column;
+    justify-content: center;
+}
+
+button{
+    display: flex;
     align-items: center;
+    padding: 15px;
+    font-size: 1em;
+    background-color: #EBE7D0;
+    border: 0;
+    cursor: pointer;
+}
+
+button svg{
+    margin-right: 5px;
+}
+
+button a{
+    text-decoration: none;
+    color: #000;
 }

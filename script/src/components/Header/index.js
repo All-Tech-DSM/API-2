@@ -11,7 +11,7 @@ function Header(){
             </div>
 
             <div className='nav'>
-                <Link to="/">Cadastro</Link>
+                <Link to="/cadastro">Cadastro</Link>
                 <Link to="/consulta">Consulta</Link>
             </div>
 
