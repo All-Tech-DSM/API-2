@@ -3,11 +3,13 @@ import { IMaskInput } from "react-imask";
 import React, { useState } from "react";
 import Axios from "axios";
 import { toast } from 'react-toastify';
+import { cpf } from 'cpf-cnpj-validator'; 
 
 function Cadastro() {
+
   const [nome, setNome] = useState('');
   const [email, setEmail] = useState('');
-  const [cpf, setCpf] = useState('');
+  const [cpfe, setCpf] = useState('');
   const [nasc, setNasc] = useState('');
   const [tel, setTel] = useState('');
   const [cel, setCel] = useState('');
@@ -67,6 +69,14 @@ function Cadastro() {
     }).catch((err) => console.log(err));
   }
 
+  const checkCpf = (e) => {
+    const cpfe = e.target.value.replace(/\D/g, '');
+    if (cpf.isValid(cpfe) == false){
+      toast.error("CPF invalido")
+      setTimeout(function(){setCpf('')}, 2000);
+    }
+  }
+
   function handleSubmit(e) {
     e.preventDefault()
     toast.success('Cadastrado feito com sucesso!');
@@ -74,7 +84,7 @@ function Cadastro() {
     Axios.post("http://localhost:3001/register", {
       nome: nome,
       email: email,
-      cpf: cpf,
+      cpf: cpfe,
       nas_data: nasc,
       tel_fixo: tel,
       tel_celular: cel,
@@ -108,7 +118,7 @@ function Cadastro() {
           </div>
 
           <div className='metade'>
-            <IMaskInput mask="000.000.000-00" placeholder="CPF" value={cpf} onChange={(e) => setCpf(e.target.value)} />
+            <IMaskInput mask="000.000.000-00" placeholder="CPF" value={cpfe} onBlur={checkCpf} onChange={(e) => setCpf(e.target.value)} />
             <IMaskInput mask="00/00/0000" placeholder='Data de nascimento' value={nasc} onChange={(e) => setNasc(e.target.value)} />
             <IMaskInput mask="(00) 00000-0000" placeholder='Telefone' value={tel} onChange={(e) => setTel(e.target.value)} />
             <IMaskInput mask="(00) 00000-0000" placeholder='Celular' value={cel} onChange={(e) => setCel(e.target.value)} />

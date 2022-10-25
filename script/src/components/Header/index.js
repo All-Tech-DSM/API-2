@@ -7,7 +7,7 @@ function Header(){
         <header>
             <div className='logo'>
                 <img src={icone}/>
-                <p>All Teach</p>
+                <p>All Tech</p>
             </div>
 
             <div className='nav'>
