@@ -3,7 +3,7 @@ async function connect(){
   return global.connection;
 
   const mysql = require("mysql2/promise");
-  const connection = await mysql.createConnection("mysql://root:admin@localhost:3306/cadastro");
+  const connection = await mysql.createConnection("mysql://root:fatec@localhost:3306/cadastro");
   global.connection = connection;
   return connection;
 }
@@ -12,6 +12,7 @@ async function insert_fun(nome,email,cpf,nas_data,tel_fixo,tel_celular,cep,numer
   const con = await connect();
   con.query(`insert into funcionario(nome,email,cpf,nas_data,tel_fixo,tel_celular,cep,numero,rua,bairro,cidade,estado,complemento)
   values ('${nome}','${email}','${cpf}','${nas_data}','${tel_fixo}','${tel_celular}','${cep}','${numero}','${rua}','${bairro}','${cidade}','${estado}','${complemento}');`)
+  permissao = true
 }
 
 async function insert_esc(escolas,cpf){
@@ -40,6 +41,7 @@ const express = require("express");
 const app = express();
 const cors = require("cors");
 const { exec } = require('node:child_process')
+const schedule = require('node-schedule');
 
 
 app.use(express.json());
@@ -96,50 +98,23 @@ async function associados() {
     return sendrequest
 }
 
-async function trechos(nomes) {
-    var data = {
-        array: nomes
-    }
-    var options = {
-        method: 'POST',
-        uri: 'http://127.0.0.1:5000/trechos',
-        body: data,
-        json: true
-    };
-    var sendrequest = await request(options)
-        .then(function (parsedBody) {
-            result = parsedBody['result'];
-            //console.log(result)
-            return result
-        })
-        .catch(function (err) {
-            console.log(err);
-        });
-        //console.log(r)
-    return sendrequest
-}
-
-
+var permissao = true
+var x = ''
+const job = schedule.scheduleJob('0 0 8 * * 2-6', function(){
+  permissao = true
+  // console.log('pemitido')
+});
 
 app.get("/pdf_inf", (req, resp) => {
   async function main() {
-    var x = await associados()
+    if(permissao){x = await associados()
+      // console.log('rodou')
+      permissao = false}
     resp.send(x);
     }
   main()
     
 });
-
-// app.get("/pdf_ind", (req, resp) => {
-//   async function main() {
-//     var x = await associados()
-//     var y = await trechos(x)
-//     resp.send(y);
-//     }
-//   main()
-
-// });
-
 
 app.listen(3001, () => {
   console.log("rodando na porta 3001");
