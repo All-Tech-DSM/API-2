@@ -7,8 +7,6 @@ import Axios from "axios";
 import Card from "./card.js";
 const link = Card()
 
-import PDF from "../../PDF/lucineia pereira de paula/merger.pdf"
-
 function Dados() {
   var { id } = useParams();
   const [listo, setList] = useState([]);
@@ -30,9 +28,6 @@ function Dados() {
   }
   console.log(dado[3])
 
-
-
-
   return (
     <div>
       <Header />
@@ -43,10 +38,6 @@ function Dados() {
         </p>
 
         <div className='split'>
-
-          <div className='pdf'>
-            <embed src={PDF} width="100%" height="100%" />
-          </div>
 
           <div className='text'>
             <p type='text'>{dado[3]}</p>
