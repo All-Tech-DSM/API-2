@@ -74,7 +74,8 @@ def busca():
         merger.write(os.path.join(dir2, "merger.pdf"))
     trechos = []
     for n in res:
-        n[-1] = leitor(n[0])
+        n.append(leitor(n[0]))
+    print(res)
     return res
     # for i in res:
     #     i.pop()

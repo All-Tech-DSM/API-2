@@ -3,12 +3,13 @@ import Header from "../../components/Header";
 import { useParams } from 'react-router-dom'
 import React, { useState, useEffect } from "react";
 import Axios from "axios";
-
+import { FiArrowRight, FiFileText } from "react-icons/fi";
 import Card from "./card.js";
 const link = Card()
 
 function Dados() {
   var { id } = useParams();
+  id = parseInt(id)
   const [listo, setList] = useState([]);
 
   useEffect(() => {
@@ -26,7 +27,6 @@ function Dados() {
       }
     }
   }
-  console.log(dado[3])
 
   return (
     <div>
@@ -37,10 +37,16 @@ function Dados() {
           Email: {dado[2]}
         </p>
 
+        <div>
+          <p>Links dos pdfs que foram retirados os trechos:</p>
+          {typeof dado[3] !== 'undefined'&& dado[3].map((link) => 
+            <a href={link}><FiArrowRight size={25} /></a>
+          )}
+        </div>
+        
         <div className='split'>
-
           <div className='text'>
-            <p type='text'>{dado[3]}</p>
+            <p type='text'>{dado[4]}</p>
           </div>
         </div>
       </div>
