@@ -40,7 +40,7 @@ function Dados() {
         <div>
           <p>Links dos pdfs que foram retirados os trechos:</p>
           {typeof dado[3] !== 'undefined'&& dado[3].map((link) => 
-            <a href={link}><FiArrowRight size={25} /></a>
+            <a href={link} target='_blanck'><FiArrowRight size={25} /></a>
           )}
         </div>
         
