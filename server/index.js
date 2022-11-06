@@ -88,13 +88,11 @@ async function associados() {
     var sendrequest = await request(options)
         .then(function (parsedBody) {
             result = parsedBody['result'];
-            //console.log(result)
             return result
         })
         .catch(function (err) {
             console.log(err);
         });
-        //console.log(r)
     return sendrequest
 }
 
@@ -102,13 +100,11 @@ var permissao = true
 var x = ''
 const job = schedule.scheduleJob('0 0 8 * * 2-6', function(){
   permissao = true
-  // console.log('pemitido')
 });
 
 app.get("/pdf_inf", (req, resp) => {
   async function main() {
     if(permissao){x = await associados()
-      // console.log('rodou')
       permissao = false}
     resp.send(x);
     }

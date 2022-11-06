@@ -6,10 +6,11 @@ import requests
 import os
 import shutil
 from PyPDF2 import PdfFileReader, PdfFileMerger
+
 def busca():
     con = MySQLdb.connect( user="root", password="fatec", db="cadastro")
     cur = con.cursor()
-    cur.execute('SELECT nome, fun_cod, email FROM funcionario ORDER BY nome;')
+    cur.execute('SELECT nome, fun_cod, email, cpf, tel_celular FROM funcionario ORDER BY nome;')
     feedback=cur.fetchall()
     nomes = []
     for i in range(len(feedback)):
@@ -17,6 +18,8 @@ def busca():
         buffer.append('"'+feedback[i][0].lower()+'"')
         buffer.append(feedback[i][1])
         buffer.append(feedback[i][2])
+        buffer.append(feedback[i][3])
+        buffer.append(feedback[i][4])
         nomes.append(buffer)
     data = "2022-09-17"#str(date.today())
     datatext = "17/09/2022"#date.today()
@@ -36,6 +39,8 @@ def busca():
         pessoa.append(nomes[n][0])
         pessoa.append(nomes[n][1])
         pessoa.append(nomes[n][2])
+        pessoa.append(nomes[n][3])
+        pessoa.append(nomes[n][4])
         pessoa.append(coletor(url))
         res.append(pessoa)
 
@@ -53,8 +58,6 @@ def busca():
     for p in res:
         pdf_n = 1
         for l in p[-1]:
-            # if len(lit) <3:
-            #     break
             r = requests.get(l, stream = True)
             if not os.path.exists(f'{dir}/{p[0]}'):
                 os.makedirs(f'{dir}/{p[0]}')
@@ -72,13 +75,6 @@ def busca():
         for a in pdf_files2:
             os.remove(dir2+'/'+a)
         merger.write(os.path.join(dir2, "merger.pdf"))
-    trechos = []
     for n in res:
         n.append(leitor(n[0]))
-    print(res)
     return res
-    # for i in res:
-    #     i.pop()
-    # return res
-
-

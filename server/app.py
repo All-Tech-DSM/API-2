@@ -1,8 +1,8 @@
-
 from flask import Flask, request
 import json 
 from buscador import busca
 from leitor import leitor
+from escritor import relatorio
    
 app = Flask(__name__) 
   
@@ -12,6 +12,7 @@ def associados():
     data = request.get_json() 
     ls = data['array'] 
     result = busca()
+    relatorio()
     return json.dumps({"result":result})
    
 if __name__ == "__main__": 

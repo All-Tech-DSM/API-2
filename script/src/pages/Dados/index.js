@@ -39,14 +39,14 @@ function Dados() {
 
         <div>
           <p>Links dos pdfs que foram retirados os trechos:</p>
-          {typeof dado[3] !== 'undefined'&& dado[3].map((link) => 
+          {typeof dado[5] !== 'undefined'&& dado[5].map((link) => 
             <a href={link} target='_blanck'><FiArrowRight size={25} /></a>
           )}
         </div>
         
         <div className='split'>
           <div className='text'>
-            <p type='text'>{dado[4]}</p>
+            <p type='text'>{dado[6]}</p>
           </div>
         </div>
       </div>
