@@ -36,4 +36,3 @@ def relatorio():
     doc.build(info)
     print('Relatorio Gerado Com Sucesso!')
     return resultado
-relatorio()

@@ -58,6 +58,9 @@ form button{
     background-color: #EBE7D0;
     font-size: 1.3em;
     cursor: pointer;
+    display: flex;
+    justify-content: center;
+    margin: 20px 0px;
 }
 
 .login a{

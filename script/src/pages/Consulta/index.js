@@ -54,7 +54,7 @@ function Consulta() {
         </table>
       </div>
       <div className='flex-end'>
-        <button><FiFileText size={25} /><Link to='relatorio_diario'>Ver Relatório Diário</Link></button>
+        <a id='diario'><FiFileText size={25} />Relatório diário armazenado na página Server</a>
       </div>
       </>
       )}

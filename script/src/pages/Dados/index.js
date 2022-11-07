@@ -3,9 +3,7 @@ import Header from "../../components/Header";
 import { useParams } from 'react-router-dom'
 import React, { useState, useEffect } from "react";
 import Axios from "axios";
-import { FiArrowRight, FiFileText } from "react-icons/fi";
-import Card from "./card.js";
-const link = Card()
+import { FiArrowRight } from "react-icons/fi";
 
 function Dados() {
   var { id } = useParams();
