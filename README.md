@@ -31,7 +31,7 @@ Cada uma realizada através de tag neste repositório, além da criação de bra
 |:------:|:----------:|:---------------:|:---------:|
 |   01   | 18/09/2022 | Finalizado ✔️   | [Ver relatório](https://github.com/All-Tech-DSM/API-2/tree/Sprint-1) |
 |   02   | 09/10/2022 | Finalizado ✔️   | [Ver relatório](https://github.com/All-Tech-DSM/API-2/tree/Sprint-2) |
-|   03   | 06/11/2022 | Não Iniciado 🛑 | Ver relatório |
+|   03   | 06/11/2022 | Finalizado ✔️ | [Ver relatório](https://github.com/All-Tech-DSM/API-2/tree/Sprint-3) |
 |   04   | 27/11/2022 | Não Iniciado 🛑 | Ver relatório |
 
 <br>
@@ -48,8 +48,8 @@ Cada uma realizada através de tag neste repositório, além da criação de bra
 |   1    |   RF3  | Consultas de dados                                    |   ✅    |
 |   1    |   RF4  | Automação do download e da exclusão dos pdf's         |   ✅    |
 |   2    |   RF5  | Raspagem de trechos da página                         |   ✅    |
-|   3    |   RF6  | Automação da montagem do relatório diário sobre os associados citados no Diário Oficial |   ❌    |
-|   3    |   RF7  | Automação do acompanhamento de citação com prazos     |   ❌    |
+|   3    |   RF6  | Automação da montagem do relatório diário             |   ✅    |
+|   4    |   RF7  | Automação do acompanhamento de citação com prazos     |   ❌    |
 |   4    |   RF8  | Armazenamento do histórico de consultas no front-end  |   ❌    |
 |   4    |   RF9  | Automação do envio de e-mails                         |   ❌    |
 
@@ -71,8 +71,8 @@ Cada uma realizada através de tag neste repositório, além da criação de bra
 ## :file_folder: Configuração das pastas
 * 📂 `script`: Pasta com os códigos do react/front;
 * 📂 `doc`: Pasta com Documentação do Banco de Dados e fotos;
-* 📂 `server`: Pasta com os códigos bara conexão com o banco e consulta do diário oficial;
-* 📂 `PDF`: Pata onde são armazenados os PDFs baixados;
+* 📂 `server`: Pasta com os códigos para conexão com o banco, consulta do diário oficial e relatórios diários;
+* 📂 `PDF`: Pasta onde são armazenados os PDFs baixados;
 
 <br>
 
