@@ -12,25 +12,24 @@
 
 <br>
 
-<h4 align="center"> Durante essa segunda sprint o foco foi a raspagem de trechos e o desenvolvimento de melhorias e correções para o projeto. </h4>
+<h4 align="center"> Durante essa terceira sprint o foco foi a automação da montagem do relatório diário. </h4>
 
 <span id="userstory">  
 
 ## :dart: User Story 
 
 <div align="center"> 
-<img src="img/us_sprint2.png" width="700"/>
+<img src="img/us_sprint3.png" width="700"/>
 </div>
 <br>
 
-O User Story faz referência aos requisitos: RF2 RF3 RNF1 RNF2 RNF3. 
+O User Story faz referência aos requisitos: RF6 RNF1 RNF2 RNF3. 
 Confira abaixo a descrição de cada um.
 
-* RF2: Raspagem de dados (leitor)
-* RF3: Consultas de dados
-* RNF1	Linguagem Node.js
-* RNF2	Programação em TypeScript e JavaScript
-* RNF3	Banco de Dados Relacional (MySQL)
+* RF6: Automação da montagem do relatório diário
+* RNF1: Linguagem Node.js
+* RNF2:	Programação em TypeScript e JavaScript
+* RNF3:	Banco de Dados Relacional (MySQL)
 
 <span id="mockup"> 
 
@@ -40,7 +39,7 @@ Como parte do planejamento do projeto foi criado o mockup para idealização do 
 
 <br>
 <div align="center ">
-<img src="img/mockup_s2.png" width="700"/>
+<img src="img/mockup_s3.png" width="700"/>
 </div>
 
 <a href="#menu"> -> Voltar ao menu</a>
@@ -53,7 +52,7 @@ Para acompanhar as atividades, foi criado e atualizado pelo Scrum Master, um gr�
 
 <br>
 <div align="center"> 
-<img src="img/burndown_s2.png" width="700"/>
+<img src="img/burndown_s3.png" width="700"/>
 </div>
 <a href="#menu"> -> Voltar ao menu</a>
 <br>
