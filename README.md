@@ -66,15 +66,16 @@ Como parte do planejamento do projeto foram criado os mockup's para idealizaçã
 
 <span id="modelo"> 
 
-## :film_strip: Modelos de Banco de Dados
+## :bookmark_tabs: Modelos de Banco de Dados
 
 <div align="center ">
 
 ### Modelo Conceitual
-<img src="img/conceitual.png" width="700"/>
+![modelo_conceitual](https://user-images.githubusercontent.com/100284976/203177715-94ff4cd3-5f1b-45de-8bc7-943abae378a4.JPG)
 
 ### Modelo Lógico
-<img src="img/logico.png" width="700"/>
+![modelo_logico](https://user-images.githubusercontent.com/100284976/203177730-edf50479-15df-4648-9117-35f69ae4fdb5.JPG)
+
 </div>
 
 <a href="#menu"> -> Voltar ao menu</a>
@@ -83,7 +84,7 @@ Como parte do planejamento do projeto foram criado os mockup's para idealizaçã
 
 ## :chart_with_downwards_trend: Burndown
 
-Para acompanhar as atividades, foi criado e atualizado pelo Scrum Master, um gráfico de burndown onde podemos visualizar de forma tangivel os esforços de tempo e a progressão ao longo dos dias da sprint.
+Para acompanhar as atividades, foi criado e atualizado pelo Scrum Master, um gráfico de burndown onde podemos visualizar de forma tangivel os esforços de tempo e a progressão ao longo dos dias da sprint. Os dados mostram que trabalhamos mais do que o esperado.
 
 <br>
 <div align="center"> 
