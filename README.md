@@ -5,6 +5,7 @@
 <p align="center"> 
     <a href="#userstory">User Story</a> | 
     <a href="#mockup">Mockup</a> |
+    <a href="#exe">Execução</a> |
     <a href="#burndown">Burndown</a> |
     <a href="#manual">Manual</a>
 
@@ -23,7 +24,7 @@
 </div>
 <br>
 
-O User Story faz referência aos requisitos: RF6 RNF1 RNF2 RNF3. 
+O User Story faz referência aos requisitos: RF6, RNF1, RNF2 e RNF3. 
 Confira abaixo a descrição de cada um.
 
 * RF6: Automação da montagem do relatório diário
@@ -42,48 +43,48 @@ Como parte do planejamento do projeto foi criado o mockup para idealização do 
 <img src="img/mockup_s3.png" width="700"/>
 </div>
 
+<span id="exe">
+
+## :film_strip: Execução
+
+https://user-images.githubusercontent.com/100284976/203215154-205e9f69-4264-47fa-b0df-a7aebed9ed0a.mp4
+
 <a href="#menu"> -> Voltar ao menu</a>
 
 <span id="burndown">
 
 ## :chart_with_downwards_trend: Burndown
 
-Para acompanhar as atividades, foi criado e atualizado pelo Scrum Master, um gráfico de burndown onde podemos visualizar de forma tangivel os esforços de tempo e a progressão ao longo dos dias da sprint.
+Para acompanhar as atividades, foi criado e atualizado pelo Scrum Master, um gráfico de burndown onde podemos visualizar de forma tangivel os esforços de tempo e a progressão ao longo dos dias da sprint. O tempo para realizar essa sprint foi de apenas uma hora a mais do que foi estipulado.
 
 <br>
 <div align="center"> 
 <img src="img/burndown_s3.png" width="700"/>
 </div>
-<a href="#menu"> -> Voltar ao menu</a>
+
 <br>
 
 <span id="manual">
 
  ## :scroll: Manual - Como Rodar
 
-* É necessário ter o Node.js, MySQL, Python(versão 3.10),  Visual Studio Code e o Git instalado na máquina.
+* É necessário ter o Node.js, MySQL, Python(versão 3.10 ou maior),  Visual Studio Code e o Git instalado na máquina.
 
 * Caso não tenha-os, instale pelo https://nodejs.org/en/, https://dev.mysql.com, https://www.python.org/downloads/, https://code.visualstudio.com/Download e https://git-scm.com/downloads
 
-* Crie uma pasta de sua preferência em sua máquina;
-
-* Abra o cmd e digite: git clone https://github.com/All-Tech-DSM/API-2.git
-
-* Feche o cmd;
+* Crie uma pasta, abra o cmd e digite: git clone https://github.com/All-Tech-DSM/API-2.git
 
 * Abra o MySQL e execute o arquivo `script.sql` 
 
-* Vá à pasta 📂 `API-2`;
-
-* Abra a pasta no VS Code;
+* Abra a pasta 📂 `API-2` no VS Code;
 
 * Em seguida acesse a pasta 📂 server e abra o arquivo `index.js`;
 
 * Vá na linha 06 e configure a rota de seu MySQL;
 
-* Em seguida salve o arquivo e feche-o;
+* Em seguida, salve o arquivo e feche-o;
 
-* Abre o arquivo “buscador.py” e configure os dados do MySQL na linha 7;
+* Abre o arquivo “buscador.py” e configure os dados do MySQL na linha 11;
 
 * Ainda na pasta 📂 `server` abra o cmd e digite: npm install;
 
