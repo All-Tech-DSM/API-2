@@ -5,6 +5,7 @@
 <p align="center"> 
     <a href="#userstory">User Story</a> | 
     <a href="#mockup">Mockup</a> |
+    <a href="#exe">Execução</a> |
     <a href="#burndown">Burndown</a> |
     <a href="#manual">Manual</a>
 
@@ -28,9 +29,9 @@ Confira abaixo a descrição de cada um.
 
 * RF2: Raspagem de dados (leitor)
 * RF3: Consultas de dados
-* RNF1	Linguagem Node.js
-* RNF2	Programação em TypeScript e JavaScript
-* RNF3	Banco de Dados Relacional (MySQL)
+* RNF1:	Linguagem Node.js
+* RNF2:	Programação em TypeScript e JavaScript
+* RNF3:	Banco de Dados Relacional (MySQL)
 
 <span id="mockup"> 
 
@@ -42,6 +43,12 @@ Como parte do planejamento do projeto foi criado o mockup para idealização do 
 <div align="center ">
 <img src="img/mockup_s2.png" width="700"/>
 </div>
+
+
+<span id="exe"> 
+
+## :film_strip: Execução
+https://user-images.githubusercontent.com/100284976/204048492-90da2625-2a26-4fa9-99ce-6a63d49720c6.mp4
 
 <a href="#menu"> -> Voltar ao menu</a>
 
@@ -55,7 +62,7 @@ Para acompanhar as atividades, foi criado e atualizado pelo Scrum Master, um gr�
 <div align="center"> 
 <img src="img/burndown_s2.png" width="700"/>
 </div>
-<a href="#menu"> -> Voltar ao menu</a>
+
 <br>
 
 <span id="manual">
