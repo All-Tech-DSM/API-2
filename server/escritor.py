@@ -24,7 +24,7 @@ def relatorio():
     info.append(Paragraph(quebra3linhas))
 
     for lista in resultado:
-        associado= f"<font size = '12'><strong>Nome do associado(a):</strong> {lista[0]} <br></br> <strong> E-mail:</strong> {lista[2]} <br></br>  <strong>CPF: </strong> {lista[3]} <br></br>  <strong>Celular: </strong> {lista[4]} </font>"
+        associado= f"<font size = '12'><strong>Nome do associado(a):</strong> {lista[0]} <br></br> <strong> E-mail:</strong> {lista[2]} <br></br>  <strong>CPF: </strong> {lista[3]} <br></br>  <strong>Celular: </strong> {lista[4]} <br></br>  <strong>Prazos: </strong> {lista[7]}</font>"
         ocorrencia =  f"<font size = '10'>{lista[6]}</font>"
         info.append(Paragraph(associado))
         info.append(Paragraph(quebra2linhas))
@@ -36,3 +36,4 @@ def relatorio():
     doc.build(info)
     print('Relatorio Gerado Com Sucesso!')
     return resultado
+relatorio()

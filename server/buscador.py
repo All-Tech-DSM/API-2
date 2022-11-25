@@ -76,5 +76,8 @@ def busca():
             os.remove(dir2+'/'+a)
         merger.write(os.path.join(dir2, "merger.pdf"))
     for n in res:
-        n.append(leitor(n[0]))
+        trechos = leitor(n[0])
+        n.append(trechos[0])
+        n.append(trechos[1])
     return res
+busca()
