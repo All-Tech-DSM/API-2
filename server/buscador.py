@@ -6,6 +6,7 @@ import requests
 import os
 import shutil
 from PyPDF2 import PdfFileReader, PdfFileMerger
+from carteiro import enviar
 
 def busca():
     con = MySQLdb.connect( user="root", password="fatec", db="cadastro")
@@ -80,4 +81,5 @@ def busca():
         n.append(trechos[0])
         n.append(trechos[1])
     return res
+
 busca()

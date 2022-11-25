@@ -72,9 +72,35 @@ app.post("/register", (req, res) => {
   insert_esc(escolas,cpf)
 });
 
+app.post('/envio_de_emails', (req, res) => {
+  const { info } = req.body
+  enviaremail(info)
+
+})
 
 var request = require('request-promise');
-var a = new Array();
+
+async function enviaremail(info) {
+  var data = {
+      array: info
+  }
+  var options = {
+      method: 'POST',
+      uri: 'http://127.0.0.1:5000/envio_email',
+      body: data,
+      json: true
+  }; 
+  var sendrequest = await request(options)
+      .then(function (parsedBody) {
+          result = parsedBody['result'];
+          return result
+      })
+      .catch(function (err) {
+          console.log(err);
+      });
+  return sendrequest
+}
+
 async function associados() {
     var data = {
         array: 1
@@ -84,7 +110,7 @@ async function associados() {
         uri: 'http://127.0.0.1:5000/associados',
         body: data,
         json: true
-    };
+    }; 
     var sendrequest = await request(options)
         .then(function (parsedBody) {
             result = parsedBody['result'];

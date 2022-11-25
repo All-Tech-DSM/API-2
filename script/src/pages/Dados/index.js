@@ -4,6 +4,7 @@ import { useParams } from 'react-router-dom'
 import React, { useState, useEffect } from "react";
 import Axios from "axios";
 import { FiArrowRight } from "react-icons/fi";
+import {MdOutlineEmail} from "react-icons/md";
 
 function Dados() {
   var { id } = useParams();
@@ -26,30 +27,45 @@ function Dados() {
     }
   }
 
+  function sendemail() {
+    console.log('oi')
+    Axios.post("http://localhost:3001/envio_de_emails", {
+      info: dado
+    }).then((res)=>{
+      console.log(res)
+
+      
+    })    
+  }
+
   return (
     <div>
       <Header />
-      <div id='dadodia'>
+      <div id='dados'>
         <p>
-          Nome: {dado[0]} <br />
-          Email: {dado[2]}
+          <b>Nome:</b> {dado[0]} <br />
+          <b>Email:</b> {dado[2]}
         </p>
+      </div>
 
-        <div>
-          <p>Links dos pdfs que foram retirados os trechos:</p>
-          {typeof dado[5] !== 'undefined'&& dado[5].map((link) => 
-            <a href={link} target='_blanck'><FiArrowRight size={25} /></a>
-          )}
+      <div id='links'>
+        <p>Links dos pdfs que foram retirados os trechos:</p>
+        {typeof dado[5] !== 'undefined' && dado[5].map((link) =>
+          <a href={link} target='_blanck'><FiArrowRight size={25} /></a>
+        )}
+      </div>
+
+      <div className='trecho'>
+        <div className='text'>
+          <p type='text'>{dado[6]}</p>
         </div>
-        
-        <div className='split'>
-          <div className='text'>
-            <p type='text'>{dado[6]}</p>
-          </div>
-        </div>
+      </div>
+
+      <div className='flend-end'>
+        <button type='submit' onClick={() => sendemail()}><MdOutlineEmail size={25}/>Enviar email</button>
       </div>
     </div>
   );
 }
-
+ 
 export default Dados;
