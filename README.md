@@ -49,9 +49,8 @@ Cada uma realizada através de tag neste repositório, além da criação de bra
 |   1    |   RF4  | Automação do download e da exclusão dos pdf's         |   ✅    |
 |   2    |   RF5  | Raspagem de trechos da página                         |   ✅    |
 |   3    |   RF6  | Automação da montagem do relatório diário             |   ✅    |
-|   4    |   RF7  | Automação do acompanhamento de citação com prazos     |   ❌    |
-|   4    |   RF8  | Armazenamento do histórico de consultas no front-end  |   ❌    |
-|   4    |   RF9  | Automação do envio de e-mails                         |   ❌    |
+|   4    |   RF7  | Destaque dos prazos nos relatórios                    |   ✅    |
+|   4    |   RF8  | Automação do envio de e-mails                         |   ✅    |
 
 #### Requisitos Não Funcionais  
 | CÓDIGO | DESCRIÇÃO | STATUS |
@@ -60,7 +59,7 @@ Cada uma realizada através de tag neste repositório, além da criação de bra
 | RNF2 | Programação em TypeScript e JavaScript | ✅ |
 | RNF3 | Banco de Dados Relacional (MySQL)      | ✅ |
 | RNF4 | Documentações do Projeto               | ✅ |
-| RNF5 | Responsividade                         | ❌ |
+| RNF5 | Responsividade                         | ✅ |
 
 </div>
 
