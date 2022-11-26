@@ -37,6 +37,41 @@ async function insert_esc(escolas,cpf){
   }
 }
 
+const { format } = require('date-fns')
+
+async function insert_trechos(dados){
+  const today = new Date();
+  const formattedDate = format(today, 'dd.MM.yyyy');
+  const con = await connect();
+
+  for(let k=0; dados.length > k; ++k){
+    let dado = dados[k]
+
+    var [rows] = await con.query(`select rel_data from relacao where fun_cod like "%${dado[1]}";`)
+    rows = rows[0]
+
+    var chave = true
+    if(rows != undefined){
+      for(let c=0; rows.length > c; ++c){
+        if(rows[c]==formattedDate){
+          chave = false
+        }
+      }
+    }
+
+    
+    if(chave){
+      con.query(`insert into trechos(trecho) values ('${dado[6]}');`);
+
+      var [rows] = await con.query(`select tre_cod from trechos where trecho like '${dado[6]}';`)
+      rows = rows[0]
+
+       
+      con.query(`insert into relacao(rel_data,fun_cod,tre_cod) values ('${formattedDate}',${dado[1]},${rows.tre_cod});`);
+    }
+  }
+}
+
 const express = require("express");
 const app = express();
 const cors = require("cors");
@@ -130,7 +165,9 @@ const job = schedule.scheduleJob('0 0 8 * * 2-6', function(){
 
 app.get("/pdf_inf", (req, resp) => {
   async function main() {
-    if(permissao){x = await associados()
+    if(permissao){
+      x = await associados()
+      insert_trechos(x)
       permissao = false}
     resp.send(x);
     }

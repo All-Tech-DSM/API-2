@@ -1,4 +1,3 @@
-drop database cadastro;
 create database cadastro;
 use cadastro;
 
@@ -29,6 +28,19 @@ fun_cod int not null,
 foreign key(fun_cod) REFERENCES funcionario (fun_cod),
 esc_cod int not null,
 foreign key(esc_cod) REFERENCES escolas (esc_cod)
+);
+
+create table trechos(
+tre_cod int auto_increment primary key,
+trecho varchar(5000)
+);
+
+create table relacao(
+rel_cod int auto_increment primary key,
+fun_cod int not null,
+foreign key(fun_cod) REFERENCES funcionario (fun_cod),
+tre_cod int not null,
+foreign key(tre_cod) REFERENCES trechos (tre_cod)
 );
 
 insert into funcionario (fun_cod, nome, email, cpf, nas_data, tel_fixo, tel_celular, cep, numero, rua, bairro, cidade, estado, complemento) values 
