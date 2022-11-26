@@ -13,21 +13,22 @@
 
 <br>
 
-<h4 align="center"> Durante essa terceira sprint o foco foi a automação da montagem do relatório diário. </h4>
+<h4 align="center"> Durante essa quarta e última sprint o foco foi a automação do envio de e-mails automático. </h4>
 
 <span id="userstory">  
 
 ## :dart: User Story 
+<div align="center">
 
-<div align="center"> 
-<img src="img/us_sprint3.png" width="700"/>
+![us_sprint4](https://user-images.githubusercontent.com/100284976/204103498-984fbc73-8cc1-4ae9-a193-4e6438c50add.png)
 </div>
+
 <br>
 
-O User Story faz referência aos requisitos: RF6, RNF1, RNF2 e RNF3. 
+O User Story faz referência aos requisitos: RF8, RNF1, RNF2 e RNF3. 
 Confira abaixo a descrição de cada um.
 
-* RF6: Automação da montagem do relatório diário
+* RF8: Automação do envio de e-mails
 * RNF1: Linguagem Node.js
 * RNF2:	Programação em TypeScript e JavaScript
 * RNF3:	Banco de Dados Relacional (MySQL)
@@ -40,14 +41,16 @@ Como parte do planejamento do projeto foi criado o mockup para idealização do 
 
 <br>
 <div align="center ">
-<img src="img/mockup_s3.png" width="700"/>
+
+![mockup_sprint4](https://user-images.githubusercontent.com/100284976/204103656-be780f67-0aca-4323-aaa6-b2be6ad03d8d.png)
+
 </div>
 
 <span id="exe">
 
 ## :film_strip: Execução
 
-https://user-images.githubusercontent.com/100284976/203215154-205e9f69-4264-47fa-b0df-a7aebed9ed0a.mp4
+
 
 <a href="#menu"> -> Voltar ao menu</a>
 
@@ -55,11 +58,13 @@ https://user-images.githubusercontent.com/100284976/203215154-205e9f69-4264-47fa
 
 ## :chart_with_downwards_trend: Burndown
 
-Para acompanhar as atividades, foi criado e atualizado pelo Scrum Master, um gráfico de burndown onde podemos visualizar de forma tangivel os esforços de tempo e a progressão ao longo dos dias da sprint. O tempo para realizar essa sprint foi de apenas uma hora a mais do que foi estipulado.
+Para acompanhar as atividades, foi criado e atualizado pelo Scrum Master, um gráfico de burndown onde podemos visualizar de forma tangivel os esforços de tempo e a progressão ao longo dos dias da sprint. Realizamos X horas a mais do que era esperado.
 
 <br>
 <div align="center"> 
-<img src="img/burndown_s3.png" width="700"/>
+
+
+
 </div>
 
 <br>
