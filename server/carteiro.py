@@ -9,7 +9,6 @@ mensagem = ['para sophia', 'para lucas']
 
 
 def enviar(pessoa, msg, nome):
-    print('oi')
     subject = 'Suas Ocorrencias no diário official de são paulo'
     body = f''' Olá {nome}, somos da All Tech e você foi citado(a/e) no Diário Official. 
     Confira o trecho:
@@ -28,3 +27,5 @@ def enviar(pessoa, msg, nome):
     with smtplib.SMTP_SSL('smtp.gmail.com', 465, context=context) as smtp:
         smtp.login(email_envio, email_senha)
         smtp.sendmail(email_envio, pessoa, em.as_string())
+
+    print(f'E-mail enviado com sucesso à {pessoa}')
