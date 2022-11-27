@@ -31,8 +31,8 @@ Cada uma realizada através de tag neste repositório, além da criação de bra
 |:------:|:----------:|:---------------:|:---------:|
 |   01   | 18/09/2022 | Finalizado ✔️   | [Ver relatório](https://github.com/All-Tech-DSM/API-2/tree/Sprint-1) |
 |   02   | 09/10/2022 | Finalizado ✔️   | [Ver relatório](https://github.com/All-Tech-DSM/API-2/tree/Sprint-2) |
-|   03   | 06/11/2022 | Finalizado ✔️ | [Ver relatório](https://github.com/All-Tech-DSM/API-2/tree/Sprint-3) |
-|   04   | 27/11/2022 | Não Iniciado 🛑 | Ver relatório |
+|   03   | 06/11/2022 | Finalizado ✔️   | [Ver relatório](https://github.com/All-Tech-DSM/API-2/tree/Sprint-3) |
+|   04   | 27/11/2022 | Finalizado ✔️   | [Ver relatório](https://github.com/All-Tech-DSM/API-2/tree/Sprint-4) |
 
 <br>
 
@@ -100,13 +100,13 @@ Cada uma realizada através de tag neste repositório, além da criação de bra
 
 * Vá na linha 06 e configure a rota de seu MySQL;
 
-  <img src="doc/img/banco_index_tutorial.jpeg" width="700"/>
+![index](https://user-images.githubusercontent.com/100284976/204158929-09748f58-c357-4d7a-acf7-1c912fb8f76b.png)
 
 * Em seguida salve o arquivo e feche-o;
 
-* Abre o arquivo “buscador.py” e configure os dados do MySQL na linha 7;
+* Abre o arquivo “buscador.py” e configure os dados do MySQL na linha 11;
 
-  <img src="doc/img/banco_tutorial_buscador.jpeg" width="700"/>
+![buscador](https://user-images.githubusercontent.com/100284976/204158947-ce51393f-68dc-4716-ae3f-58a5a1b9c43c.png)
 
 * Ainda na pasta 📂 `server` abra o cmd e digite: npm install;
 
@@ -145,5 +145,3 @@ Cada uma realizada através de tag neste repositório, além da criação de bra
  |   Dev Team    | Gustavo Borges Lima                   |  [![Linkedin Badge](https://img.shields.io/badge/Linkedin-blue?style=flat-square&logo=Linkedin&logoColor=white)](https://www.linkedin.com/in/NOME/) [![GitHub Badge](https://img.shields.io/badge/GitHub-111217?style=flat-square&logo=github&logoColor=white)](https://github.com/Miojoguu)              |
  |   Dev Team    | Júlia Sousa Gayotto                   |  [![Linkedin Badge](https://img.shields.io/badge/Linkedin-blue?style=flat-square&logo=Linkedin&logoColor=white)](https://www.linkedin.com/in/júlia-gayotto/) [![GitHub Badge](https://img.shields.io/badge/GitHub-111217?style=flat-square&logo=github&logoColor=white)](https://github.com/JuliaGayotto)              |
  |   Dev Team    | Lucas França Registro                 |  [![Linkedin Badge](https://img.shields.io/badge/Linkedin-blue?style=flat-square&logo=Linkedin&logoColor=white)](https://www.linkedin.com/in/NOME/) [![GitHub Badge](https://img.shields.io/badge/GitHub-111217?style=flat-square&logo=github&logoColor=white)](https://github.com/LucasFrancaRegistro)              |
-
-<a href="#menu">Voltar ao menu</a>
