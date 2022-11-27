@@ -4,7 +4,7 @@ import { useParams } from 'react-router-dom'
 import React, { useState, useEffect } from "react";
 import Axios from "axios";
 import { FiArrowRight } from "react-icons/fi";
-import {MdOutlineEmail} from "react-icons/md";
+import { MdOutlineEmail } from "react-icons/md";
 
 function Dados() {
   var { id } = useParams();
@@ -61,8 +61,8 @@ function Dados() {
         </div>
       </div>
 
-      <div className='flend-end'>
-        <button type='submit' onClick={() => sendemail()}><MdOutlineEmail size={25}/>Enviar email</button>
+      <div className='flex-end'>
+        <button id='diario' type='submit' onClick={() => sendemail()}><MdOutlineEmail size={25}/>Enviar email</button>
       </div>
     </div>
   );

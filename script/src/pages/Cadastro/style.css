@@ -36,13 +36,14 @@ input{
 
 .metade{
     display: grid;
-    grid-template-columns: 17vw 17.1vw;
+    grid-template-columns: 17vw 17.4vw;
     grid-column-gap: 1em;
 }
 
 .school{
     display: flex;
     flex-direction: row;
+    align-items: center;
 }
 
 .school input{
@@ -78,6 +79,7 @@ input{
     color: #FFF;
     display: flex;
     justify-content: center;
+    align-items: center;
 }
 
 .add{
@@ -88,4 +90,46 @@ input{
 .submit{
     width: 8vw;
     background-color: #A2FAB6;
+}
+
+@media screen and (max-width: 680px) {
+    .content{
+        width: 75vw;
+    }
+    .content p {
+        margin-bottom: 0em;
+    }
+    .metade {
+        display: flex;
+        flex-direction: column;
+    }
+    .dados {
+        width: 100%;
+    }
+    .school input {
+        width: 48vw;
+        font-size: 1.2em;
+    }
+    .del {
+        width: 18vw;
+        margin: 0px;
+        margin-left: 5px;
+        font-size: 1em;
+    }
+    .submits button {
+        font-size: 1.1em;
+        height: 8vh;
+    }
+    .add {
+        width: 30vw;
+    }
+    .submit {
+        width: 20vw;
+    }
+}
+
+@media screen and (max-width: 1340px) {
+    .submits button {
+        height: 10vh;
+    }
 }

@@ -87,3 +87,22 @@ tr button{
 #diario svg{
     margin-right: 5px;
 }
+
+@media screen and (max-width: 680px) {
+
+    .container-table {
+        padding: 1px 25px;
+        margin-bottom: 5%;
+    }
+    #dadodia {
+        margin: 8% 0% 4% 0%;
+    }
+    #diario {
+        margin: 0% 7%;
+    }
+    #diario svg {
+        height: 10vh;
+        width: 10vw;
+        margin: 0px 15px;
+    }
+}

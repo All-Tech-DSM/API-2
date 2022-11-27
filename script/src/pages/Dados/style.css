@@ -1,28 +1,40 @@
-#dadodia{
+#dados, #links{
     font-size: 1.5em;
     text-align: center;
     margin: 2% 0%;
 }
 
-.split{
-    display: flex;
-    flex-direction: row;
-    align-items: center;
-    justify-content: space-evenly;
+b{
+    font-weight: 500;
 }
 
-.pdf{
-    height: 80vh;
-    width: 40vw;
+.trecho{
+    display: flex;
+    justify-content: center;
+    margin-bottom: 3%;
 }
 
 .text p{
-    height: 70vh;
-    width: 40vw;
+    height: 42vh;
+    width: 60vw;
     background-color: rgba(235, 231, 208, 0.65);
     border: none;
     border-radius: 5px;
     padding: 30px;
     font-size: 1.1em;
     overflow-y: scroll;
+}
+
+#diario{
+    cursor: pointer;
+}
+
+@media screen and (max-width: 680px) {
+
+    #dados, #links{
+        font-size: 1.2em;
+        width: 92vw;
+        margin: 5% 0% 5% 5%;
+    }
+
 }

@@ -54,6 +54,7 @@ function Cadastro() {
     setCity('')
     setEstado('')
     setComp('')
+    setFormValue('')
   }
 
   const checkCEP = (e) => {
@@ -73,12 +74,13 @@ function Cadastro() {
     const cpfe = e.target.value.replace(/\D/g, '');
     if (cpf.isValid(cpfe) == false){
       toast.error("CPF invalido")
-      setTimeout(function(){setCpf('')}, 2000);
+      setTimeout(1000);
     }
   }
 
   function handleSubmit(e) {
     e.preventDefault()
+    if (cpf.isValid(cpfe) == true){
     toast.success('Cadastrado feito com sucesso!');
 
     Axios.post("http://localhost:3001/register", {
@@ -97,11 +99,9 @@ function Cadastro() {
       complemento: comp,
       escolas: formValue
     }).then((res)=>{
-      console.log(res)
-      clearAreas()
-      
+      console.log(res)      
     })    
-
+  }
   }
 
   return (
