@@ -38,6 +38,7 @@ trecho varchar(5000)
 create table relacao(
 rel_cod int auto_increment primary key,
 fun_cod int not null,
+rel_data varchar(20),
 foreign key(fun_cod) REFERENCES funcionario (fun_cod),
 tre_cod int not null,
 foreign key(tre_cod) REFERENCES trechos (tre_cod)

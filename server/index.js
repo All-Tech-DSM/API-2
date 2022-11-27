@@ -47,7 +47,7 @@ async function insert_trechos(dados){
   for(let k=0; dados.length > k; ++k){
     let dado = dados[k]
 
-    var [rows] = await con.query(`select rel_data from relacao where fun_cod like "%${dado[1]}";`)
+    var [rows] = await con.query(`select rel_data from relacao where fun_cod like ${dado[1]};`)
     rows = rows[0]
 
     var chave = true
