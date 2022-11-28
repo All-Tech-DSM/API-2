@@ -68,9 +68,11 @@ Modificamos o banco de dados para fazer o armazenamento dos trechos.
 
 ### Modelo Conceitual
 
+![der](https://user-images.githubusercontent.com/100284976/204176588-236ffc8b-6f26-43b2-b95a-3f74db2223e8.jpeg)
 
 ### Modelo Lógico
 
+![mer](https://user-images.githubusercontent.com/100284976/204176600-219ce867-2b97-479a-8e9d-787c13cd92c9.jpeg)
 
 </div>
 
