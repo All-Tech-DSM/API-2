@@ -1,19 +1,23 @@
 <div align="center" id="menu">
-<img src="img/logo_transparent.png"/></div>
-<h3 align="center"> Desenvolvimento de Aplicação Web Simples, FrontEnd Básico, com Persistência em BD Relacional </h3>
 
-<p align="center"> 
+![logo_transparent](https://user-images.githubusercontent.com/100284976/204163666-80fa9d66-1823-4ce7-9c60-92e04c3cf33c.png)
+
+<h3> Desenvolvimento de Aplicação Web Simples, FrontEnd Básico, com Persistência em BD Relacional </h3>
+
+<p> 
     <a href="#userstory">User Story</a> | 
     <a href="#mockup">Mockup</a> |
     <a href="#exe">Execução</a> |
+    <a href="#modelo">Modelos</a> |
     <a href="#burndown">Burndown</a> |
     <a href="#manual">Manual</a>
-
 </p>
 
 <br>
 
-<h4 align="center"> Durante essa quarta e última sprint o foco foi a automação do envio de e-mails automático. </h4>
+<h4 align="center"> Durante essa quarta e última sprint o foco foi a automação do envio de e-mails automático e melhoria do relatório diário (destaque de prazos, caso haja prazos). </h4>
+
+</div>
 
 <span id="userstory">  
 
@@ -45,12 +49,30 @@ Como parte do planejamento do projeto foi criado o mockup para idealização do 
 ![mockup_sprint4](https://user-images.githubusercontent.com/100284976/204103656-be780f67-0aca-4323-aaa6-b2be6ad03d8d.png)
 
 </div>
+<a href="#menu"> -> Voltar ao menu</a>
 
 <span id="exe">
 
 ## :film_strip: Execução
 
+https://user-images.githubusercontent.com/100284976/204167094-0be6fcaa-3d0e-4d73-9952-59f4c66055f2.mp4
 
+
+<span id="modelo"> 
+
+## :bookmark_tabs: Modelos de Banco de Dados
+
+Modificamos o banco de dados para fazer o armazenamento dos trechos.
+
+<div align="center ">
+
+### Modelo Conceitual
+
+
+### Modelo Lógico
+
+
+</div>
 
 <a href="#menu"> -> Voltar ao menu</a>
 
@@ -58,12 +80,12 @@ Como parte do planejamento do projeto foi criado o mockup para idealização do 
 
 ## :chart_with_downwards_trend: Burndown
 
-Para acompanhar as atividades, foi criado e atualizado pelo Scrum Master, um gráfico de burndown onde podemos visualizar de forma tangivel os esforços de tempo e a progressão ao longo dos dias da sprint. Realizamos X horas a mais do que era esperado.
+Para acompanhar as atividades, foi criado e atualizado pelo Scrum Master, um gráfico de burndown onde podemos visualizar de forma tangivel os esforços de tempo e a progressão ao longo dos dias da sprint. Realizamos 27 horas e 20 minutos a mais do esperado, que era 41 horas e meia.
 
 <br>
-<div align="center"> 
+<div align="center">
 
-
+![burndown_s4](https://user-images.githubusercontent.com/100284976/204166372-6000e581-fbe1-431e-808d-f45cb9ad80d4.png)
 
 </div>
 
