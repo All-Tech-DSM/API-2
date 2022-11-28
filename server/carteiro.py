@@ -9,8 +9,8 @@ mensagem = ['para sophia', 'para lucas']
 
 
 def enviar(pessoa, msg, nome):
-    subject = 'Suas Ocorrencias no diário official de são paulo'
-    body = f''' Olá {nome}, somos da All Tech e você foi citado(a/e) no Diário Official. 
+    subject = 'Suas ocorrencias no Diário oficial de São Paulo'
+    body = f''' Olá {nome}, somos da All Tech e você foi citado(a) no Diário Oficial. 
     Confira o trecho:
 
     {msg}

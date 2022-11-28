@@ -3,6 +3,7 @@ import Header from "../../components/Header";
 import { useParams } from 'react-router-dom'
 import React, { useState, useEffect } from "react";
 import Axios from "axios";
+import { toast } from 'react-toastify';
 import { FiArrowRight } from "react-icons/fi";
 import { MdOutlineEmail } from "react-icons/md";
 
@@ -29,6 +30,7 @@ function Dados() {
 
   function sendemail() {
     console.log('oi')
+    toast.success('Email enviado com sucesso!');
     Axios.post("http://localhost:3001/envio_de_emails", {
       info: dado
     }).then((res)=>{
