@@ -1,8 +1,10 @@
 <div align="center" id="menu">
-<img src="doc/img/logo_transparent.png"/></div>
-<h3 align="center"> Desenvolvimento de Aplicação Web Simples, FrontEnd Básico, com Persistência em BD Relacional </h3>
 
-<p align="center">
+![logo_transparent](https://user-images.githubusercontent.com/100284976/204177068-e171ce45-da4d-46a7-83d4-c4425a41cee4.png)
+
+<h3> Desenvolvimento de Aplicação Web Simples, FrontEnd Básico, com Persistência em BD Relacional </h3>
+
+<p>
     <a href="#sobre">Sobre</a> | 
     <a href="#entrega">Entregas de Sprints</a> |
     <a href="#backlog">Backlogs</a> | 
@@ -10,7 +12,7 @@
     <a href="#manual">Manual de usuário</a> |
     <a href="#equipe">Equipe</a>
 </p>
-
+</div>
 <br>
 
 <span id="sobre">
@@ -20,6 +22,8 @@
     
 
 > :gear: **Tecnologias Utilizadas:** [ReactJs](https://pt-br.reactjs.org/), [JavaScript](https://developer.mozilla.org/pt-BR/docs/Web/JavaScript), [TypeScript](https://www.typescriptlang.org/), [Node](https://nodejs.org/en/about/), [Python](https://www.python.org/), [HTML](https://developer.mozilla.org/pt-BR/docs/Web/HTML), [CSS](https://developer.mozilla.org/pt-BR/docs/Web/CSS), [Figma](http://www.figma.com), [Visual Studio Code](https://code.visualstudio.com/), [Discord](https://discord.com/), [GitHub](https://github.com/), [Excel](https://www.microsoft.com/pt-br/microsoft-365/free-office-online-for-the-web)
+
+> **Documentação do projeto:** [AllTech v4.0.pdf](https://github.com/All-Tech-DSM/API-2/files/10099932/AllTech.v4.0.pdf)
 
 <br>
 
@@ -69,7 +73,6 @@ Cada uma realizada através de tag neste repositório, além da criação de bra
 
 ## :file_folder: Configuração das pastas
 * 📂 `script`: Pasta com os códigos do react/front;
-* 📂 `doc`: Pasta com Documentação do Banco de Dados e fotos;
 * 📂 `server`: Pasta com os códigos para conexão com o banco, consulta do diário oficial e relatórios diários;
 * 📂 `PDF`: Pasta onde são armazenados os PDFs baixados;
 
